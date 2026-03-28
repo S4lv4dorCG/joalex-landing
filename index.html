@@ -11,6 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
+  <!-- Cybersecurity Hardening -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://wa.me https://*.fbcdn.net https://cdn.simpleicons.org; connect-src 'self' https://wa.me; frame-src 'self' https://www.google.com https://maps.google.com;">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="stylesheet" href="style.css" />
   
   <!-- OpenGraph / Social Media -->
@@ -34,7 +39,7 @@
         </a>
       </div>
       <nav class="header-contact">
-        <a href="https://wa.me/5215610901116" class="header-link" target="_blank" rel="noopener">
+        <a href="https://wa.me/5215610901116" class="header-link" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -43,14 +48,14 @@
           </svg>
           56 1090 1116
         </a>
-        <a href="mailto:asesoriaintegraljoalex@gmail.com" class="header-link" target="_blank" rel="noopener">
+        <a href="mailto:asesoriaintegraljoalex@gmail.com" class="header-link" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="2" y="4" width="20" height="16" rx="2" />
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
           </svg>
           asesoriaintegraljoalex@gmail.com
         </a>
-        <a href="https://www.facebook.com/josue.alegre.142" class="header-link" target="_blank" rel="noopener">
+        <a href="https://www.facebook.com/josue.alegre.142" class="header-link" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -63,7 +68,7 @@
           </svg>
           Instagram
         </a>
-        <a href="https://share.google/NDEFLMH5rmBPbDOVB" class="header-link" target="_blank" rel="noopener"
+        <a href="https://share.google/NDEFLMH5rmBPbDOVB" class="header-link" target="_blank" rel="noopener noreferrer"
           title="Encinos 136, Miguel Hidalgo 4ta Secc, Tlalpan, 14250 Ciudad de México, CDMX">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
@@ -78,7 +83,7 @@
     </div>
     <nav class="mobile-nav" id="mobileNav">
       <a href="#servicios">Servicios</a>
-      <a href="#marcas">Marcas</a>
+      <a href="#marcas" onclick="toggleMenu()">Marcas</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#resumen">Resumen</a>
       <a href="#contacto">Contacto</a>
@@ -123,7 +128,7 @@
         </div>
         <div class="hero-ctas hero-ctas-optimized">
           <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20de%20un%20auto"
-            class="btn btn-primary" target="_blank" rel="noopener">
+            class="btn btn-primary" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -184,7 +189,7 @@
       </div>
       <div class="marcas-grid">
 
-        <a href="https://www.vw.com.mx" target="_blank" rel="noopener" class="marca-card" title="Volkswagen México">
+        <a href="https://www.vw.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Volkswagen México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/volkswagen" alt="Volkswagen" width="60" height="60"
               style="object-fit: contain;" loading="lazy" />
@@ -193,7 +198,7 @@
           <span class="marca-url">vw.com.mx ↗</span>
         </a>
 
-        <a href="https://www.nissan.com.mx" target="_blank" rel="noopener" class="marca-card" title="Nissan México">
+        <a href="https://www.nissan.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Nissan México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/nissan" alt="Nissan" width="60" height="60"
               style="object-fit: contain;" loading="lazy" />
@@ -202,7 +207,7 @@
           <span class="marca-url">nissan.com.mx ↗</span>
         </a>
 
-        <a href="https://www.kia.com/mx" target="_blank" rel="noopener" class="marca-card" title="KIA México">
+        <a href="https://www.kia.com/mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="KIA México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/kia" alt="KIA" width="60" height="60" style="object-fit: contain;" loading="lazy" />
           </div>
@@ -210,7 +215,7 @@
           <span class="marca-url">kia.com/mx ↗</span>
         </a>
 
-        <a href="https://www.chevrolet.com.mx" target="_blank" rel="noopener" class="marca-card"
+        <a href="https://www.chevrolet.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
           title="Chevrolet México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/chevrolet" alt="Chevrolet" width="60" height="60"
@@ -220,43 +225,43 @@
           <span class="marca-url">chevrolet.com.mx ↗</span>
         </a>
 
-        <a href="https://www.toyota.com.mx" target="_blank" rel="noopener" class="marca-card" title="Toyota México">
+        <a href="https://www.toyota.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Toyota México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/toyota" alt="Toyota" width="60" height="60"
               style="object-fit: contain;" />
           </div>
           <span class="marca-name">Toyota</span>
-          <span class="marca-url">toyota.com.mx ↗</span>
+          <span class="marca-url">toyota.mx ↗</span>
         </a>
 
-        <a href="https://www.mazda.com.mx" target="_blank" rel="noopener" class="marca-card" title="Mazda México">
+        <a href="https://www.mazda.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Mazda México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/mazda" alt="Mazda" width="60" height="60"
               style="object-fit: contain;" loading="lazy" />
           </div>
           <span class="marca-name">Mazda</span>
-          <span class="marca-url">mazda.com.mx ↗</span>
+          <span class="marca-url">mazda.mx ↗</span>
         </a>
 
-        <a href="https://www.honda.com.mx" target="_blank" rel="noopener" class="marca-card" title="Honda México">
+        <a href="https://www.honda.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Honda México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/honda" alt="Honda" width="60" height="60"
               style="object-fit: contain;" />
           </div>
           <span class="marca-name">Honda</span>
-          <span class="marca-url">honda.com.mx ↗</span>
+          <span class="marca-url">honda.mx ↗</span>
         </a>
 
-        <a href="https://www.ford.com.mx" target="_blank" rel="noopener" class="marca-card" title="Ford México">
+        <a href="https://www.ford.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Ford México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/ford" alt="Ford" width="66" height="66"
               style="object-fit: contain;" />
           </div>
           <span class="marca-name">Ford</span>
-          <span class="marca-url">ford.com.mx ↗</span>
+          <span class="marca-url">ford.mx ↗</span>
         </a>
 
-        <a href="https://www.hyundai.com/mx" target="_blank" rel="noopener" class="marca-card" title="Hyundai México">
+        <a href="https://www.hyundai.com/mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Hyundai México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/hyundai" alt="Hyundai" width="64" height="64"
               style="object-fit: contain;" />
@@ -265,7 +270,7 @@
           <span class="marca-url">hyundai.com/mx ↗</span>
         </a>
 
-        <a href="https://www.jeep.com.mx" target="_blank" rel="noopener" class="marca-card" title="Jeep México">
+        <a href="https://www.jeep.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Jeep México">
           <div class="marca-logo">
             <img src="https://cdn.simpleicons.org/jeep" alt="Jeep" width="60" height="60"
               style="object-fit: contain;" loading="lazy" />
@@ -398,7 +403,7 @@
               <p>¿Ya eres cliente? Refiere a un conocido y, al comprar su auto, <strong>te regalo la aplicación de nanotecnología</strong> para el tuyo de forma gratuita.</p>
             </div>
           </div>
-          <div style="flex-shrink: 0; display: flex; align-items: center;">
+          <div class="beneficio-btn-wrap">
             <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20ya%20soy%20cliente%20y%20quiero%20referir%20a%20un%20conocido"
               class="btn btn-primary" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
@@ -764,7 +769,7 @@
               <li><span class="check-gold">✓</span> Licitaciones sector público y privado</li>
             </ul>
             <a href="https://wa.me/5215610901116?text=Hola,%20quisiera%20información%20sobre%20asesoría%20jurídica"
-              class="btn btn-primary mt-4" target="_blank" rel="noopener" style="justify-content: center;">
+              class="btn btn-primary mt-4" target="_blank" rel="noopener noreferrer" style="justify-content: center;">
               <svg viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
                 <path
                   d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -792,7 +797,7 @@
               <!-- Botones de contacto directo -->
               <div class="contact-direct-buttons-mini" style="grid-template-columns: repeat(2,1fr);">
                 <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20de%20un%20auto"
-                  class="mini-btn whatsapp-btn" target="_blank" rel="noopener" title="WhatsApp">
+                  class="mini-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
                       d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -893,36 +898,22 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container">
-
       <!-- Grid principal 3 columnas -->
-      <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; padding: 20px 0 16px; border-bottom: 1px solid rgba(165,142,94,0.15);">
-
+      <div id="footerGrid" class="footer-grid">
         <!-- Col 1: Logo + redes -->
-        <div style="display: flex; flex-direction: column; gap: 14px;">
-          <a href="#" style="display: inline-block; text-decoration: none; border-radius: 8px; overflow: hidden; width: fit-content;">
-            <img src="nuevo-logo.jpg.jfif" alt="JOALEX Asesoría"
-              style="height: 56px; width: auto; object-fit: contain; display: block; mix-blend-mode: lighten;">
+        <div class="footer-col footer-about">
+          <a href="#" class="footer-logo-wrap">
+            <img src="nuevo-logo.jpg.jfif" alt="JOALEX Asesoría" class="footer-logo-img">
           </a>
-          <!-- Redes sociales -->
-          <div>
-            <p style="font-size: 0.72rem; color: rgba(255,255,255,0.4); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px;">Síguenos en:</p>
-            <div style="display: flex; gap: 12px;">
-              <a href="https://www.facebook.com/josue.alegre.142" target="_blank" rel="noopener" title="Facebook"
-                style="display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.8rem; font-weight: 600; padding: 5px 10px; border-radius: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(165,142,94,0.2); transition: all 0.2s;"
-                onmouseover="this.style.background='#1877F2';this.style.borderColor='#1877F2';this.style.color='#fff';"
-                onmouseout="this.style.background='rgba(255,255,255,0.06)';this.style.borderColor='rgba(165,142,94,0.2)';this.style.color='rgba(255,255,255,0.65)';">
-                <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
+          <div class="footer-social">
+            <p class="footer-label">Síguenos en:</p>
+            <div class="footer-social-links">
+              <a href="https://www.facebook.com/josue.alegre.142" target="_blank" rel="noopener noreferrer" class="social-btn facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 Facebook
               </a>
-              <a href="https://www.instagram.com/joalex_0498?igsh=MXZ6ZXh2Y3VhcGdrOA%3D%3D" target="_blank" rel="noopener" title="Instagram"
-                style="display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.8rem; font-weight: 600; padding: 5px 10px; border-radius: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(165,142,94,0.2); transition: all 0.2s;"
-                onmouseover="this.style.background='#E1306C';this.style.borderColor='#E1306C';this.style.color='#fff';"
-                onmouseout="this.style.background='rgba(255,255,255,0.06)';this.style.borderColor='rgba(165,142,94,0.2)';this.style.color='rgba(255,255,255,0.65)';">
-                <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
+              <a href="https://www.instagram.com/joalex_0498?igsh=MXZ6ZXh2Y3VhcGdrOA%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 Instagram
               </a>
             </div>
@@ -930,60 +921,51 @@
         </div>
 
         <!-- Col 2: Navegación rápida -->
-        <div>
-          <h4 style="color: var(--gold-light); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">Navegación</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0;">
-            <li><a href="#servicios" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(165,142,94,0.08); transition: all 0.2s;" onmouseover="this.style.color='var(--gold-light)';this.style.paddingLeft='6px';" onmouseout="this.style.color='rgba(255,255,255,0.6)';this.style.paddingLeft='0';" ><span style="color:var(--gold-light);font-size:0.55rem;">✦</span> Servicios</a></li>
-            <li><a href="#resumen" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(165,142,94,0.08); transition: all 0.2s;" onmouseover="this.style.color='var(--gold-light)';this.style.paddingLeft='6px';" onmouseout="this.style.color='rgba(255,255,255,0.6)';this.style.paddingLeft='0';"><span style="color:var(--gold-light);font-size:0.55rem;">✦</span> Resumen Ejecutivo</a></li>
-            <li><a href="#experiencia" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(165,142,94,0.08); transition: all 0.2s;" onmouseover="this.style.color='var(--gold-light)';this.style.paddingLeft='6px';" onmouseout="this.style.color='rgba(255,255,255,0.6)';this.style.paddingLeft='0';"><span style="color:var(--gold-light);font-size:0.55rem;">✦</span> Experiencia Joalex</a></li>
-            <li><a href="#testimonios" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(165,142,94,0.08); transition: all 0.2s;" onmouseover="this.style.color='var(--gold-light)';this.style.paddingLeft='6px';" onmouseout="this.style.color='rgba(255,255,255,0.6)';this.style.paddingLeft='0';"><span style="color:var(--gold-light);font-size:0.55rem;">✦</span> Historias de Éxito</a></li>
-            <li><a href="#contacto" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; padding: 4px 0; transition: all 0.2s;" onmouseover="this.style.color='var(--gold-light)';this.style.paddingLeft='6px';" onmouseout="this.style.color='rgba(255,255,255,0.6)';this.style.paddingLeft='0';"><span style="color:var(--gold-light);font-size:0.55rem;">✦</span> Contacto</a></li>
+        <div class="footer-col footer-nav">
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios"><span>✦</span> Servicios</a></li>
+            <li><a href="#resumen"><span>✦</span> Resumen Ejecutivo</a></li>
+            <li><a href="#experiencia"><span>✦</span> Experiencia Joalex</a></li>
+            <li><a href="#testimonios"><span>✦</span> Historias de Éxito</a></li>
+            <li><a href="#contacto"><span>✦</span> Contacto</a></li>
           </ul>
         </div>
 
         <!-- Col 3: Contacto -->
-        <div>
-          <h4 style="color: var(--gold-light); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">Contacto</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
-            <li style="display: flex; align-items: center; gap: 10px;">
-              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;color:var(--gold-light);flex-shrink:0;">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
-              </svg>
-              <a href="https://wa.me/5215610901116" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem;">56 1090 1116</a>
+        <div class="footer-col footer-contact">
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+              <a href="https://wa.me/5215610901116" target="_blank" rel="noopener noreferrer">56 1090 1116</a>
             </li>
-            <li style="display: flex; align-items: center; gap: 10px;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;">
-                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-              <a href="mailto:asesoriaintegraljoalex@gmail.com" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; word-break: break-all;">asesoriaintegraljoalex@gmail.com</a>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:asesoriaintegraljoalex@gmail.com">asesoriaintegraljoalex@gmail.com</a>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 10px;">
-              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;color:var(--gold-light);flex-shrink:0;margin-top:2px;">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-              </svg>
-              <span style="color: rgba(255,255,255,0.6); font-size: 0.88rem; line-height: 1.5;">Encinos 136, Miguel Hidalgo 4ta Secc, Tlalpan, CDMX</span>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Encinos 136, Miguel Hidalgo 4ta Secc, Tlalpan, CDMX</span>
             </li>
           </ul>
         </div>
-
       </div>
 
       <!-- Barra legal inferior -->
-      <div style="padding: 10px 0 6px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: flex-start;">
-        <div>
-          <p style="margin: 0 0 4px; text-align: left; font-size: 0.72rem; color: rgba(255,255,255,0.45); line-height: 1.5;">© 2025 Josue Daniel Alegre – Servicios de Asesoría Integral Joalex. Todos los derechos reservados.</p>
-          <p style="margin: 0; text-align: left; font-size: 0.72rem; color: rgba(255,255,255,0.45); line-height: 1.5;">Las promociones, precios y disponibilidad están sujetos a cambio sin previo aviso. Sitio informativo.</p>
+      <div class="footer-legal-bar">
+        <div class="footer-legal-info">
+          <p>© 2025 Josue Daniel Alegre – Servicios de Asesoría Integral Joalex. Todos los derechos reservados.</p>
+          <p>Las promociones, precios y disponibilidad están sujetos a cambio sin previo aviso. Sitio informativo.</p>
         </div>
-        <p style="font-size: 0.72rem; color: rgba(255,255,255,0.45); max-width: 420px; text-align: right; line-height: 1.5; margin: 0; display: flex; align-items: flex-start; gap: 6px; justify-content: flex-end;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:14px;height:14px;flex-shrink:0;margin-top:1px;color:rgba(165,142,94,0.7);">
+        <div class="footer-privacy-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/>
             <polyline points="9 12 11 14 15 10"/>
           </svg>
-          <span>Los datos personales proporcionados son tratados de forma confidencial, exclusivamente para fines de contacto y asesoría, conforme a la <strong style="color:rgba(255,255,255,0.6); font-weight:600;">Ley Federal de Protección de Datos Personales (LFPDPPP)</strong>.</span>
-        </p>
+          <p>Los datos personales proporcionados son tratados de forma confidencial, exclusivamente para fines de contacto y asesoría, conforme a la <strong>Ley Federal de Protección de Datos Personales (LFPDPPP)</strong>.</p>
+        </div>
       </div>
-
-
     </div>
   </footer>
 
@@ -1032,7 +1014,7 @@
       const tipo = document.getElementById('tipo').value;
       const mensaje = document.getElementById('mensaje').value;
       const text = `Hola Josue, te contacto desde tu landing page.\n\n👤 Nombre: ${nombre}\n📞 Teléfono: ${telefono}\n🚗 Interés: ${tipo}\n💬 Mensaje: ${mensaje}`;
-      window.open(`https://wa.me/5215610901116?text=${encodeURIComponent(text)}`, '_blank');
+      window.open(`https://wa.me/5215610901116?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
     }
     // Enviar Reseña Localmente y Limitar a 20
     function submitReview(e) {
@@ -1070,14 +1052,30 @@
 
       const card = document.createElement('div');
       card.className = 'testimonio-card';
-      card.innerHTML = `
-        <div class="testimonio-rating">${starsHtml}</div>
-        <p class="testimonio-texto">"${comentario}"</p>
-        <div class="testimonio-autor">
-          <strong>${nombre}</strong>
-          <span>Adquirió un ${vehiculo}</span>
-        </div>
-      `;
+      
+      const ratingDiv = document.createElement('div');
+      ratingDiv.className = 'testimonio-rating';
+      ratingDiv.innerHTML = starsHtml; // Safe: generated by internal loop
+      
+      const textoP = document.createElement('p');
+      textoP.className = 'testimonio-texto';
+      textoP.textContent = `"${comentario}"`;
+      
+      const autorDiv = document.createElement('div');
+      autorDiv.className = 'testimonio-autor';
+      
+      const nombreStrong = document.createElement('strong');
+      nombreStrong.textContent = nombre;
+      
+      const vehiculoSpan = document.createElement('span');
+      vehiculoSpan.textContent = `Adquirió un ${vehiculo}`;
+      
+      autorDiv.appendChild(nombreStrong);
+      autorDiv.appendChild(vehiculoSpan);
+      
+      card.appendChild(ratingDiv);
+      card.appendChild(textoP);
+      card.appendChild(autorDiv);
 
       // Añadir al inicio del track
       track.insertBefore(card, track.firstChild);
