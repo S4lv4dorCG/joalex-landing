@@ -1044,6 +1044,7 @@ section { padding: 80px 0; }
 .gallery-card {
   flex: 1 1 0;
   min-width: 0;
+  height: 340px;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -1068,13 +1069,30 @@ section { padding: 80px 0; }
   transform: scale(1.25);
 }
 
+
+/* Tarjeta de video — cursor e indicación visual */
+.gallery-card-video {
+  cursor: pointer;
+  position: relative;
+}
+.gallery-card-video video {
+  transition: transform 0.6s ease;
+}
+.gallery-card-video:hover video {
+  transform: scale(1.03);
+}
+
+
 .gallery-card img {
   width: 100%;
-  height: auto;
-  max-height: 550px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.6s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.04);
 }
 
 .gallery-overlay {

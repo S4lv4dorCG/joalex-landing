@@ -510,12 +510,38 @@
           <!-- Grupo 3 -->
           <div class="gallery-slide">
             <div class="gallery-card">
-              <img src="Volkswagen_blan.jpg" alt="Entrega de Volkswagen Blanco" width="400" height="300" loading="lazy">
+              <img src="Volkswagen_blan.png" alt="Entrega de Volkswagen Blanco" width="400" height="300" loading="lazy">
               <div class="gallery-overlay"><span>Llaves en mano, sueño cumplido</span></div>
             </div>
             <div class="gallery-card">
               <img src="Honda_plata.png" alt="Entrega de Honda Plata" width="400" height="300" loading="lazy">
               <div class="gallery-overlay"><span>Cada entrega, una historia única</span></div>
+            </div>
+          </div>
+          <!-- Grupo 4 -->
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="Volkswagen_negro.png" alt="Entrega de Volkswagen Negro" width="400" height="300" loading="lazy">
+              <div class="gallery-overlay"><span>Elegancia en cada entrega</span></div>
+            </div>
+            <div class="gallery-card">
+              <img src="Volkswagen_varios.png" alt="Entregas Volkswagen Multimarca" width="400" height="300" loading="lazy">
+              <div class="gallery-overlay"><span>Satisfacción garantizada</span></div>
+            </div>
+          </div>
+          <!-- Grupo 5: Videos -->
+          <div class="gallery-slide" id="gallery-slide-videos">
+            <div class="gallery-card gallery-card-video">
+              <video src="Video_vol.mp4" muted playsinline loop preload="none"
+                style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+                onclick="this.paused ? this.play() : this.pause()" title="Haz clic para reproducir o pausar"></video>
+              <div class="gallery-overlay"><span>Entrega Volkswagen en video</span></div>
+            </div>
+            <div class="gallery-card gallery-card-video">
+              <video src="Kia_dor.mp4" muted playsinline loop preload="none"
+                style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+                onclick="this.paused ? this.play() : this.pause()" title="Haz clic para reproducir o pausar"></video>
+              <div class="gallery-overlay"><span>Entrega Kia en video</span></div>
             </div>
           </div>
         </div>
@@ -525,6 +551,8 @@
         <span class="gallery-dot active" onclick="goToGallerySlide(0)"></span>
         <span class="gallery-dot" onclick="goToGallerySlide(1)"></span>
         <span class="gallery-dot" onclick="goToGallerySlide(2)"></span>
+        <span class="gallery-dot" onclick="goToGallerySlide(3)"></span>
+        <span class="gallery-dot" onclick="goToGallerySlide(4)"></span>
       </div>
 
 
@@ -1118,35 +1146,60 @@
       const wrap = document.getElementById('galleryCarouselWrap');
       const dots = document.querySelectorAll('.gallery-dot');
       const slides = track.querySelectorAll('.gallery-slide');
+      const videoSlide = document.getElementById('gallery-slide-videos');
+      const galleryVideos = videoSlide ? videoSlide.querySelectorAll('video') : [];
       let current = 0;
       let timer;
+
+      function playVideos()  { galleryVideos.forEach(v => { v.load(); v.play().catch(() => {}); }); }
+      function pauseVideos() { galleryVideos.forEach(v => { v.pause(); v.currentTime = 0; }); }
 
       function goToSlide(idx) {
         current = (idx + slides.length) % slides.length;
         track.scrollTo({ left: slides[current].offsetLeft, behavior: 'smooth' });
         dots.forEach((d, i) => d.classList.toggle('active', i === current));
+        // Manejo de videos
+        if (slides[current] === videoSlide) {
+          stopTimer(); // pausa el auto-avance mientras hay video
+          playVideos();
+        } else {
+          pauseVideos();
+        }
       }
 
-      function next() { goToSlide(current + 1); }
+      function next() {
+        // No avanzar automáticamente cuando está en el slide de videos
+        if (slides[current] === videoSlide) return;
+        goToSlide(current + 1);
+      }
 
       function startTimer() { timer = setInterval(next, 3000); }
-      function stopTimer() { clearInterval(timer); }
+      function stopTimer()  { clearInterval(timer); }
 
       // Exponer al HTML (onclick)
       window.moveGalleryCarousel = function (dir) {
         stopTimer();
         goToSlide(current + dir);
-        startTimer();
+        if (slides[current] !== videoSlide) startTimer();
       };
       window.goToGallerySlide = function (idx) {
         stopTimer();
         goToSlide(idx);
-        startTimer();
+        if (slides[current] !== videoSlide) startTimer();
       };
 
-      // Pause on hover
+      // Pause on hover (solo mueve el auto-play, no los videos)
       wrap.addEventListener('mouseenter', stopTimer);
-      wrap.addEventListener('mouseleave', startTimer);
+      wrap.addEventListener('mouseleave', () => { if (slides[current] !== videoSlide) startTimer(); });
+
+      // Cuando el usuario interactúa con un video (click para pausar/reanudar), re-exponer el overlay
+      galleryVideos.forEach(v => {
+        v.addEventListener('click', () => {
+          // el onclick inline ya toggle play/pause; aquí sólo actualizamos el texto del overlay
+          const overlay = v.closest('.gallery-card').querySelector('.gallery-overlay span');
+          if (overlay) overlay.textContent = v.paused ? '▶ Haz clic para reproducir' : '⏸ Haz clic para pausar';
+        });
+      });
 
       // Start
       startTimer();
