@@ -2070,9 +2070,19 @@ body {
   .footer-legal-bar { flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 16px !important; }
   .footer-privacy-box { max-width: 100% !important; justify-content: center !important; }
 
-  /* Gallery optimization */
-  .gallery-slide { gap: 10px !important; }
-  .gallery-card { border-radius: 12px !important; }
+  /* Gallery: todas las fotos de 1 en 1 en móvil */
+  .gallery-slide {
+    display: contents !important; /* wrapper transparente: tarjetas fluyen directo al track */
+  }
+  .gallery-card {
+    flex: 0 0 100% !important;
+    min-width: 0 !important;
+    height: 300px !important;
+    border-radius: 12px !important;
+    scroll-snap-align: start !important;
+  }
+  /* Restaurar segunda tarjeta (visible en móvil también) */
+  .gallery-card + .gallery-card { display: flex !important; }
 }
 
 @media (max-width: 640px) {
