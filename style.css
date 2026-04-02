@@ -758,20 +758,27 @@ section { padding: clamp(48px, 8vw, 100px) 0; }
 /* ── Flip Card 3D ── */
 .flip-card {
   perspective: 1200px;
-  min-height: 340px;
+  min-height: 160px;
+  transition: min-height 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+  align-self: start;
 }
 
 .flip-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 340px;
+  min-height: 160px;
   transform-style: preserve-3d;
-  transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), min-height 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card:hover {
+  min-height: 360px;
 }
 
 .flip-card:hover .flip-inner {
   transform: rotateY(180deg);
+  min-height: 360px;
 }
 
 .flip-front,
@@ -1339,6 +1346,8 @@ section { padding: clamp(48px, 8vw, 100px) 0; }
 .modal-content {
   width: 100%;
   max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
   transform: translateY(20px);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -2198,7 +2207,8 @@ body {
   }
   .beneficio-banner .btn { width: 100% !important; max-width: 300px !important; }
   
-  .flip-card, .flip-inner { min-height: 420px !important; }
+  .flip-card, .flip-inner { min-height: 160px !important; }
+  .flip-card:hover, .flip-card:hover .flip-inner { min-height: 440px !important; }
   .flip-back { padding: 24px 20px !important; }
   .flip-front-title { font-size: 1.2rem !important; }
 }

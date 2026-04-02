@@ -325,71 +325,86 @@
       </div>
       <div class="servicios-grid">
         <!-- Tarjeta 1: Asesoría personalizada -->
-        <div class="servicio-card featured" id="asesoria-personalizada" style="text-align: center;">
-          <div class="flip-front-icon" style="margin: 0 auto 16px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="8.5" cy="7" r="4"></circle>
-              <polyline points="17 11 19 13 23 9"></polyline>
-            </svg>
-          </div>
-          <h3 class="flip-front-title" style="margin-bottom: 16px;">Asesoría personalizada</h3>
-          <p style="font-size: 0.95rem; line-height: 1.5;">Te escucho, entiendo tu presupuesto y te propongo las mejores
-            alternativas — nuevo o seminuevo — sin rodeos ni presión.</p>
-          <div class="servicio-tags" style="justify-content: center; margin-top: 16px;">
-            <span>Sin presión</span>
-            <span>A la medida</span>
+        <div class="flip-card visible" id="asesoria-personalizada">
+          <div class="flip-inner">
+            <div class="flip-front servicio-card featured visible" style="margin: 0;">
+              <div class="flip-front-icon" style="margin: 0 auto;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="8.5" cy="7" r="4"></circle>
+                  <polyline points="17 11 19 13 23 9"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="flip-back servicio-card featured visible" style="margin: 0; text-align: center;">
+              <h3 class="flip-front-title" style="margin-bottom: 12px; font-size: 1.15rem; color: var(--gold-light);">Asesoría personalizada</h3>
+              <p style="font-size: 0.92rem; line-height: 1.5; color: rgba(255,255,255,0.72); margin-bottom: 12px;">Te escucho, entiendo tu presupuesto y te propongo las mejores alternativas — nuevo o seminuevo — sin rodeos ni presión.</p>
+              <div class="servicio-tags" style="justify-content: center; margin-top: auto;">
+                <span>Sin presión</span>
+                <span>A la medida</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Tarjeta 2: Créditos bancarios -->
-        <div class="servicio-card featured" style="text-align: center;">
-          <div class="flip-front-icon" style="margin: 0 auto 16px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <line x1="3" y1="22" x2="21" y2="22"></line>
-              <line x1="6" y1="18" x2="6" y2="11"></line>
-              <line x1="10" y1="18" x2="10" y2="11"></line>
-              <line x1="14" y1="18" x2="14" y2="11"></line>
-              <line x1="18" y1="18" x2="18" y2="11"></line>
-              <polygon points="12 2 20 7 4 7"></polygon>
-            </svg>
-          </div>
-          <h3 class="flip-front-title" style="margin-bottom: 16px;">Créditos bancarios</h3>
-          <p style="font-size: 0.95rem; line-height: 1.5;">Te explico cada opción con claridad, comparamos tasas y te
-            llevo de la mano en todo el trámite. Nada se queda sin respuesta.</p>
-          <div class="servicio-tags" style="justify-content: center; margin-top: 16px;">
-            <span>7 bancos</span>
-            <span>Sin letra chica</span>
-          </div>
-          <div
-            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; color: white; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px; margin-top: 12px; opacity: 0.8;">
-            <span>BBVA</span><span style="color:var(--gold-light);">•</span>
-            <span>SANTANDER</span><span style="color:var(--gold-light);">•</span>
-            <span>BANORTE</span><span style="color:var(--gold-light);">•</span>
-            <span>CITIBANAMEX</span><span style="color:var(--gold-light);">•</span>
-            <span>HSBC</span><span style="color:var(--gold-light);">•</span>
-            <span>SCOTIABANK</span><span style="color:var(--gold-light);">•</span>
-            <span style="font-style:italic;">INBURSA</span>
+        <div class="flip-card visible">
+          <div class="flip-inner">
+            <div class="flip-front servicio-card featured visible" style="margin: 0;">
+              <div class="flip-front-icon" style="margin: 0 auto;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="3" y1="22" x2="21" y2="22"></line>
+                  <line x1="6" y1="18" x2="6" y2="11"></line>
+                  <line x1="10" y1="18" x2="10" y2="11"></line>
+                  <line x1="14" y1="18" x2="14" y2="11"></line>
+                  <line x1="18" y1="18" x2="18" y2="11"></line>
+                  <polygon points="12 2 20 7 4 7"></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="flip-back servicio-card featured visible" style="margin: 0; text-align: center;">
+              <h3 class="flip-front-title" style="margin-bottom: 12px; font-size: 1.15rem; color: var(--gold-light);">Créditos bancarios</h3>
+              <p style="font-size: 0.92rem; line-height: 1.5; color: rgba(255,255,255,0.72); margin-bottom: 12px;">Te explico cada opción con claridad, comparamos tasas y te llevo de la mano en todo el trámite. Nada se queda sin respuesta.</p>
+              <div class="servicio-tags" style="justify-content: center; margin-bottom: 8px;">
+                <span>7 bancos</span>
+                <span>Sin letra chica</span>
+              </div>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; color: white; font-weight: 700; font-size: 0.70rem; letter-spacing: 0.5px; opacity: 0.8; margin-top: auto;">
+                <span>BBVA</span><span style="color:var(--gold-light);">•</span>
+                <span>SANTANDER</span><span style="color:var(--gold-light);">•</span>
+                <span>BANORTE</span><span style="color:var(--gold-light);">•</span>
+                <span>CITIBANAMEX</span><span style="color:var(--gold-light);">•</span>
+                <span>HSBC</span><span style="color:var(--gold-light);">•</span>
+                <span>SCOTIABANK</span><span style="color:var(--gold-light);">•</span>
+                <span style="font-style:italic;">INBURSA</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Tarjeta 3: Ahorro frente a agencia -->
-        <div class="servicio-card featured" id="ahorro-agencia" style="text-align: center;">
-          <div class="flip-front-icon" style="margin: 0 auto 16px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-              <line x1="7" y1="7" x2="7.01" y2="7"></line>
-            </svg>
-          </div>
-          <h3 class="flip-front-title" style="margin-bottom: 16px;">Mejor precio que en agencia</h3>
-          <p style="font-size: 0.95rem; line-height: 1.5;">Como asesor independiente negocio directamente con las
-            agencias, lo que se traduce en mejores condiciones para ti. Tu dinero rinde más.</p>
-          <div class="servicio-tags" style="justify-content: center; margin-top: 16px;">
-            <span>Sin costo adicional</span>
-            <span>Mayor valor</span>
+        <div class="flip-card visible" id="ahorro-agencia">
+          <div class="flip-inner">
+            <div class="flip-front servicio-card featured visible" style="margin: 0;">
+              <div class="flip-front-icon" style="margin: 0 auto;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="flip-back servicio-card featured visible" style="margin: 0; text-align: center;">
+              <h3 class="flip-front-title" style="margin-bottom: 12px; font-size: 1.15rem; color: var(--gold-light);">Mejor precio que en agencia</h3>
+              <p style="font-size: 0.92rem; line-height: 1.5; color: rgba(255,255,255,0.72); margin-bottom: 12px;">Como asesor independiente negocio directamente con las agencias, lo que se traduce en mejores condiciones para ti. Tu dinero rinde más.</p>
+              <div class="servicio-tags" style="justify-content: center; margin-top: auto;">
+                <span>Sin costo adicional</span>
+                <span>Mayor valor</span>
+              </div>
+            </div>
           </div>
         </div>
 
