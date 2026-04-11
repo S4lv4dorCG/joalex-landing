@@ -122,6 +122,20 @@ svg {
   gap: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
+  min-height: 84px; /* 56px logo + 14px top + 14px bottom — prevents header collapse */
+}
+
+/* Force consistent logo size across all pages */
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-logo-link img {
+  height: 56px !important;
+  width: auto !important;
+  display: block !important;
 }
 
 .logo {
@@ -1006,6 +1020,31 @@ section {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(188, 139, 93, 0.12), inset 0 0 20px rgba(255, 255, 255, 0.04);
   border-top: 1px solid rgba(188, 139, 93, 0.5);
   background: rgba(255, 255, 255, 0.04);
+}
+
+/* Micro-interacción: texto y ícono reaccionan al hover */
+.servicio-card:hover h3 {
+  color: var(--gold-light) !important;
+  transition: color 0.25s ease;
+}
+
+.servicio-card:hover p {
+  color: rgba(255, 255, 255, 0.88) !important;
+  transition: color 0.25s ease;
+}
+
+.servicio-card:hover .flip-front-icon {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px rgba(188, 139, 93, 0.25);
+  border-color: rgba(188, 139, 93, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.servicio-card:hover .servicio-tags span {
+  background: rgba(145, 104, 64, 0.18);
+  color: var(--gold-light);
+  border-color: rgba(145, 104, 64, 0.38);
+  transition: all 0.25s ease;
 }
 
 .servicio-card.featured {

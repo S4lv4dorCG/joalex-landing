@@ -7,7 +7,8 @@
   <meta name="description" content="Servicios de Joalex: verificación ambiental, trámite de placas, traslado nacional, consignación de autos, toma de auto, bienes inmuebles, seguros y aliados especializados en asesoría legal, contable y financiera." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet" />
+
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://wa.me https://*.fbcdn.net https://cdn.simpleicons.org; connect-src 'self' https://wa.me; frame-src 'self' https://www.google.com https://maps.google.com;">
   <meta http-equiv="X-Frame-Options" content="DENY">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,39 +22,60 @@
     <div class="header-inner container">
       <div class="logo">
         <a href="index.html" class="header-logo-link">
-          <img src="Logo.jpeg" alt="JOALEX Asesoría" style="height:56px;width:auto;object-fit:contain;display:block;filter:sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 4px rgba(188,139,93,0.5));" loading="lazy">
+          <img src="Logo.jpeg" alt="JOALEX Asesoría Integral"
+            style="height:56px;width:auto;object-fit:contain;display:block;filter:sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 4px rgba(188,139,93,0.5));"
+            loading="eager">
+
         </a>
       </div>
-      <nav class="main-nav" id="mainNav">
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
         <a href="index.html" class="nav-link">Inicio</a>
         <div class="nav-dropdown-wrap">
-          <button class="nav-link nav-dropdown-btn" aria-expanded="false">Nosotros <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="nav-dropdown-menu">
-            <a href="acerca-de.html" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Acerca de Joalex</a>
-            <a href="mision-vision.html" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Misión · Visión · Valores</a>
-            <a href="objetivo.html" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Objetivo</a>
-            <a href="index.html#resumen" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Quién es Josue</a>
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Nosotros <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="acerca-de.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Perfil Profesional</a>
+            <a href="mision-vision.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Filosofía y Valores</a>
+            <a href="objetivo.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Nuestro Compromiso</a>
           </div>
         </div>
         <div class="nav-dropdown-wrap">
-          <button class="nav-link nav-dropdown-btn" aria-expanded="false">Servicios <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="nav-dropdown-menu">
-            <a href="servicios.html" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Todos los Servicios</a>
-            <a href="index.html#marcas" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Marcas Disponibles</a>
-            <a href="index.html#seminuevos" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Seminuevos</a>
-            <a href="index.html#experiencia" class="nav-dropdown-item"><span class="nav-drop-icon">✦</span>Experiencia Joalex</a>
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Soluciones <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="servicios.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Catálogo de Soluciones</a>
+            <a href="index.html#marcas" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Alianzas y Marcas</a>
+            <a href="index.html#seminuevos" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Inventario del Mes</a>
+            <a href="index.html#experiencia" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Galería de Entregas</a>
           </div>
         </div>
-        <a href="servicios.html#contacto" class="nav-link">Contacto</a>
+        <a href="servicios.html#contacto" class="nav-link">Consultoría</a>
       </nav>
-      <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20de%20un%20auto" class="header-wa-cta" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>Escríbenos</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20evaluar%20mis%20opciones"
+        class="header-wa-cta" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
+        </svg>
+        Escríbenos
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
     <nav class="mobile-nav" id="mobileNav">
       <a href="index.html" class="mobile-nav-link">Inicio</a>
-      <div class="mobile-accordion"><button class="mobile-accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false">Nosotros <span class="mobile-acc-arrow">›</span></button><div class="mobile-accordion-body"><a href="acerca-de.html">Acerca de</a><a href="mision-vision.html">Misión · Visión</a><a href="objetivo.html">Objetivo</a><a href="index.html#resumen">Quién es Josue</a></div></div>
-      <div class="mobile-accordion"><button class="mobile-accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false">Servicios <span class="mobile-acc-arrow">›</span></button><div class="mobile-accordion-body"><a href="servicios.html">Todos los Servicios</a><a href="index.html#marcas">Marcas</a><a href="index.html#seminuevos">Seminuevos</a></div></div>
-      <a href="servicios.html#contacto" class="mobile-nav-link">Contacto</a>
+      <div class="mobile-accordion"><button class="mobile-accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false">Nosotros <span class="mobile-acc-arrow">›</span></button><div class="mobile-accordion-body"><a href="acerca-de.html">Perfil Profesional</a><a href="mision-vision.html">Filosofía y Valores</a><a href="objetivo.html">Nuestro Compromiso</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false">Soluciones <span class="mobile-acc-arrow">›</span></button><div class="mobile-accordion-body"><a href="servicios.html">Catálogo de Soluciones</a><a href="index.html#marcas">Alianzas y Marcas</a><a href="index.html#seminuevos">Inventario del Mes</a><a href="index.html#experiencia">Galería de Entregas</a></div></div>
+      <a href="servicios.html#contacto" class="mobile-nav-link">Consultoría</a>
       <a href="https://wa.me/5215610901116" class="mobile-nav-link mobile-wa-link" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;flex-shrink:0;">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
@@ -68,7 +90,7 @@
     <div class="container page-hero-inner">
       <div class="page-hero-breadcrumb"><a href="index.html">Inicio</a><span>›</span><span>Servicios</span></div>
       <span class="section-eyebrow">Lo que hacemos</span>
-      <h1 style="display:flex; flex-wrap:wrap; align-items:center;">Todos nuestros <span style="color:var(--gold-light); margin:0 8px; font-size:0.7em; vertical-align:middle;">✦</span> Servicios</h1>
+      <h1>Todos nuestros Servicios</h1>
       <p class="page-hero-lead">Más allá de la asesoría automotriz, ofrecemos un ecosistema completo de servicios para que tu compra, trámite o gestión sea rápida, segura y sin complicaciones.</p>
     </div>
   </section>
@@ -181,13 +203,62 @@
     </div>
   </section>
 
-  <!-- ALIADOS ESPECIALIZADOS -->
+  <!-- ===================== ASESORÍA INMOBILIARIA ===================== -->
+  <section style="background: linear-gradient(135deg, rgba(15,28,48,0.95) 0%, rgba(10,22,40,1) 100%); border-top: 1px solid rgba(100,140,180,0.18); border-bottom: 1px solid rgba(100,140,180,0.18); padding: clamp(56px,7vw,80px) 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+
+        <!-- Texto izquierda -->
+        <div>
+          <span style="font-size:0.72rem; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#7eb8e8; display:inline-flex; align-items:center; gap:8px; margin-bottom:16px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Servicio Inmobiliario
+          </span>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.2rem); font-weight:800; color:white; line-height:1.2; margin-bottom:20px;">Asesoría en Bienes Raíces</h2>
+          <p style="font-size:0.95rem; color:rgba(241,245,249,0.65); line-height:1.8; margin-bottom:28px;">Extendemos nuestra asesoría al sector inmobiliario. Si buscas comprar, vender o rentar una propiedad, te conectamos con expertos del mercado para obtener las mejores condiciones, con la misma transparencia que caracteriza a Joalex.</p>
+          <div style="display:flex; gap:24px; flex-wrap:wrap;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(100,140,180,0.12);border:1px solid rgba(100,140,180,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#7eb8e8" stroke-width="2" style="width:16px;height:16px;"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <span style="font-size:0.88rem; color:rgba(241,245,249,0.75);">Compra y venta de propiedades</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(100,140,180,0.12);border:1px solid rgba(100,140,180,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#7eb8e8" stroke-width="2" style="width:16px;height:16px;"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <span style="font-size:0.88rem; color:rgba(241,245,249,0.75);">Renta de inmuebles</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(100,140,180,0.12);border:1px solid rgba(100,140,180,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#7eb8e8" stroke-width="2" style="width:16px;height:16px;"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <span style="font-size:0.88rem; color:rgba(241,245,249,0.75);">Negociación y gestión legal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card derecha -->
+        <div style="background:rgba(100,140,180,0.06); border:1px solid rgba(100,140,180,0.2); border-radius:20px; padding:36px; display:flex; flex-direction:column; gap:24px;">
+          <p style="font-size:0.78rem; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:#7eb8e8; margin:0;">¿Por qué con Joalex?</p>
+          <p style="font-size:0.95rem; color:rgba(241,245,249,0.65); line-height:1.75; margin:0;">Ofrecemos asesoría inmobiliaria como un servicio complementario. No somos una agencia de bienes raíces — somos un aliado que analiza opciones con imparcialidad y te orienta hacia la decisión más conveniente.</p>
+          <a href="#contacto" style="display:inline-flex; align-items:center; gap:8px; font-size:0.88rem; font-weight:700; color:#7eb8e8; text-decoration:none; border:1px solid rgba(100,140,180,0.35); border-radius:10px; padding:12px 20px; width:fit-content; transition:background 0.2s;" onmouseover="this.style.background='rgba(100,140,180,0.12)'" onmouseout="this.style.background='transparent'">
+            Consultar sobre inmuebles
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ALIADOS ESPECIALIZADOS ===================== -->
   <section class="aliados-section">
     <div class="container">
       <div class="aliados-intro">
         <div class="aliados-intro-text">
           <span class="section-eyebrow">Aliados especializados</span>
-          <h2 class="section-title" style="text-align:left; margin-top:12px;">Más allá del automóvil: <span style="color:var(--gold-light); margin:0 8px; font-size:0.7em; vertical-align:middle;">✦</span> soluciones integrales</h2>
+          <h2 class="section-title" style="text-align:left; margin-top:12px;">Más allá del automóvil: soluciones integrales</h2>
           <p class="page-hero-lead" style="margin-top:16px;">Contamos con una red de aliados expertos en áreas legales, contables y financieras para apoyarte en todo lo que necesites, más allá de la compra de tu vehículo.</p>
         </div>
         <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(188,139,93,0.15); border-radius:20px; padding:36px;">
@@ -210,8 +281,6 @@
     </div>
   </section>
 
-
-
   <!-- ===================== CONTACTO ===================== -->
   <section id="contacto" style="background: var(--dark); padding: clamp(70px,9vw,100px) 0; border-top: 1px solid rgba(145,104,64,0.12);">
     <div class="container">
@@ -219,32 +288,25 @@
         <h2 class="section-title">¿Qué servicio necesitas?</h2>
         <p class="section-subtitle" style="max-width: 900px; margin:0 auto;">Escríbenos y en menos de 24&nbsp;horas te damos una respuesta clara, sin compromisos y sin costo.</p>
       </div>
-
       <div class="fade-in" style="max-width: 900px; margin: 0 auto;">
-
         <h2 class="section-title" style="font-size:2rem; text-align:center; margin-bottom:12px;">Escríbeme directamente</h2>
         <div class="form-container" style="margin:0;">
           <div class="contact-methods-inner">
             <p class="form-note text-center" style="margin-bottom:8px; font-size:1rem;">Cuéntame qué buscas y te respondo a la brevedad.</p>
             <p class="form-note text-center" style="margin-bottom:24px; font-size:1rem;">Elige cómo prefieres contactarme:</p>
-
-            <!-- Botones directos -->
             <div class="contact-direct-buttons-mini" style="grid-template-columns:repeat(2,1fr);">
-              <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20sobre%20sus%20servicios"
-                class="mini-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+              <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20sobre%20sus%20servicios" class="mini-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
               </a>
               <a href="mailto:asesoriaintegraljoalex@gmail.com" class="mini-btn email-btn" target="_blank" rel="noopener" title="Correo electrónico">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </a>
             </div>
-
             <div class="form-divider" style="text-align:center; margin:32px 0; color:var(--text-light); text-transform:uppercase; font-size:0.8rem; font-weight:700; letter-spacing:0.1em; display:flex; align-items:center;">
               <span style="flex:1; height:1px; background:rgba(145,104,64,0.2);"></span>
               <span style="padding:0 16px;">O cuéntame con detalle</span>
               <span style="flex:1; height:1px; background:rgba(145,104,64,0.2);"></span>
             </div>
-
             <form id="contactForm" class="contact-form" onsubmit="sendToWhatsApp(event)">
               <div class="form-group">
                 <label for="nombre">Nombre completo</label>
@@ -252,9 +314,7 @@
               </div>
               <div class="form-group">
                 <label for="telefono">Teléfono / WhatsApp</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="WhatsApp o teléfono de contacto"
-                  pattern="[0-9]{10}" maxlength="10" inputmode="numeric"
-                  oninput="this.value=this.value.replace(/[^0-9]/g,'')" title="Ingresa exactamente 10 dígitos" required />
+                <input type="tel" id="telefono" name="telefono" placeholder="WhatsApp o teléfono de contacto" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')" title="Ingresa exactamente 10 dígitos" required />
               </div>
               <div class="form-group">
                 <label for="tipo">¿Qué tipo de servicio te interesa?</label>
@@ -267,14 +327,14 @@
                   <option value="Trámite de placas">Trámite de placas</option>
                   <option value="Traslado nacional">Traslado nacional</option>
                   <option value="Consignación de auto">Consignación de auto</option>
+                  <option value="Asesoría en Bienes Raíces">Asesoría en Bienes Raíces</option>
                   <option value="Asesoría jurídica / contable">Asesoría jurídica / contable</option>
                   <option value="Asesoría en general">Asesoría en general</option>
                 </select>
               </div>
               <div class="form-group">
                 <label for="mensaje">Mensaje <small style="color:var(--text-light);font-weight:400;">(máx. 500 caracteres)</small></label>
-                <textarea id="mensaje" name="mensaje" rows="4" maxlength="500"
-                  placeholder="Cuéntame qué estás buscando, presupuesto aproximado, si quieres crédito, etc."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" maxlength="500" placeholder="Cuéntame qué estás buscando, presupuesto aproximado, si quieres crédito, etc."></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-full mt-2">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
@@ -283,7 +343,6 @@
             </form>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -291,96 +350,61 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <!-- Grid principal 3 columnas -->
       <div id="footerGrid" class="footer-grid">
-        <!-- Col 1: Logo + redes -->
         <div class="footer-col footer-about">
           <a href="index.html" class="footer-logo-wrap" style="display:inline-block; margin-bottom: 20px;">
-            <img src="Logo.jpeg" alt="JOALEX Asesoría" class="footer-logo-img"
-              style="height: 60px; width: auto; object-fit: contain; border-radius: 4px; filter: sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 6px rgba(188,139,93,0.4));">
+            <img src="Logo.jpeg" alt="JOALEX Asesoría" class="footer-logo-img" style="height: 60px; width: auto; object-fit: contain; border-radius: 4px; filter: sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 6px rgba(188,139,93,0.4));">
           </a>
           <div class="footer-social">
             <p class="footer-label">Síguenos en:</p>
             <div class="footer-social-links">
-              <a href="https://www.facebook.com/josue.alegre.142" target="_blank" rel="noopener noreferrer"
-                class="social-btn facebook" title="Facebook">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
+              <a href="https://www.facebook.com/josue.alegre.142" target="_blank" rel="noopener noreferrer" class="social-btn facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 Facebook
               </a>
-              <a href="https://www.instagram.com/joalex_0498?igsh=MXZ6ZXh2Y3VhcGdrOA%3D%3D" target="_blank"
-                rel="noopener noreferrer" class="social-btn instagram" title="Instagram">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
+              <a href="https://www.instagram.com/joalex_0498?igsh=MXZ6ZXh2Y3VhcGdrOA%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 Instagram
               </a>
             </div>
           </div>
         </div>
-
-        <!-- Col 2: Navegación rápida -->
         <div class="footer-col footer-nav">
           <h4 class="footer-title">Navegación</h4>
           <ul class="footer-links">
-            <li><a href="servicios.html"><span>✦</span> Servicios</a></li>
-            <li><a href="index.html#resumen"><span>✦</span> Resumen Ejecutivo</a></li>
-            <li><a href="index.html#experiencia"><span>✦</span> Experiencia Joalex</a></li>
+            <li><a href="servicios.html"><span>✦</span> Catálogo de Soluciones</a></li>
+            <li><a href="acerca-de.html"><span>✦</span> Perfil Profesional</a></li>
+            <li><a href="index.html#experiencia"><span>✦</span> Galería de Entregas</a></li>
             <li><a href="index.html#testimonios"><span>✦</span> Historias de Éxito</a></li>
             <li><a href="servicios.html#contacto"><span>✦</span> Contacto</a></li>
           </ul>
         </div>
-
-        <!-- Col 3: Contacto -->
         <div class="footer-col footer-contact">
           <h4 class="footer-title">Contacto</h4>
           <ul class="footer-contact-list">
             <li>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                <path
-                  d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
-              </svg>
-              <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20de%20un%20auto"
-                target="_blank" rel="noopener noreferrer">56 1090 1116</a>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+              <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20de%20un%20auto" target="_blank" rel="noopener noreferrer">56 1090 1116</a>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-              </svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               <a href="mailto:asesoriaintegraljoalex@gmail.com">asesoriaintegraljoalex@gmail.com</a>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-              </svg>
-              <a href="https://share.google/NDEFLMH5rmBPbDOVB" target="_blank" rel="noopener noreferrer">Encinos 136,
-                Miguel Hidalgo 4ta Secc, Tlalpan, CDMX</a>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <a href="https://share.google/NDEFLMH5rmBPbDOVB" target="_blank" rel="noopener noreferrer">Encinos 136, Miguel Hidalgo 4ta Secc, Tlalpan, CDMX</a>
             </li>
           </ul>
         </div>
       </div>
-
-      <!-- Barra legal inferior -->
       <div class="footer-legal-bar">
         <div class="footer-legal-info">
           <p>© 2025 Joalex Asesoría Automotriz · Josue Daniel Alegre. Todos los derechos reservados.</p>
           <p>Precios y disponibilidad sujetos a cambio sin previo aviso. Sitio meramente informativo.</p>
         </div>
         <div class="footer-privacy-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" />
-            <polyline points="9 12 11 14 15 10" />
-          </svg>
-          <p>Los datos personales proporcionados son tratados de forma confidencial, exclusivamente para fines de
-            contacto y asesoría, conforme a la <strong>Ley Federal de Protección de Datos Personales (LFPDPPP)</strong>.
-          </p>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <p>Los datos personales proporcionados son tratados de forma confidencial, exclusivamente para fines de contacto y asesoría, conforme a la <strong>Ley Federal de Protección de Datos Personales (LFPDPPP)</strong>.</p>
         </div>
       </div>
     </div>
@@ -393,23 +417,16 @@
     if(menuToggle){menuToggle.addEventListener('click',function(){const o=mobileNav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',o?'true':'false');});}
     document.addEventListener('click',function(e){if(mobileNav&&!mobileNav.contains(e.target)&&menuToggle&&!menuToggle.contains(e.target)){mobileNav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');}});
     function toggleAccordion(btn){const body=btn.nextElementSibling;const o=body.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');document.querySelectorAll('.mobile-accordion-body.open').forEach(el=>{if(el!==body){el.classList.remove('open');el.previousElementSibling.setAttribute('aria-expanded','false');}});}
-
     function sendToWhatsApp(e) {
       e.preventDefault();
-      const nombre   = document.getElementById('nombre').value.trim();
-      const telefono = document.getElementById('telefono').value.trim();
-      const tipo     = document.getElementById('tipo').value;
-      const mensaje  = document.getElementById('mensaje').value.trim();
-      let text = `Hola Josue, me contacto desde el sitio web.\n\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono}\n*Servicio de interés:* ${tipo}`;
-      if (mensaje) text += `\n*Mensaje:* ${mensaje}`;
-      window.open('https://wa.me/5215610901116?text=' + encodeURIComponent(text), '_blank');
+      const nombre=document.getElementById('nombre').value.trim();
+      const telefono=document.getElementById('telefono').value.trim();
+      const tipo=document.getElementById('tipo').value;
+      const mensaje=document.getElementById('mensaje').value.trim();
+      let text=`Hola Josue, me contacto desde el sitio web.\n\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono}\n*Servicio de interés:* ${tipo}`;
+      if(mensaje) text+=`\n*Mensaje:* ${mensaje}`;
+      window.open('https://wa.me/5215610901116?text='+encodeURIComponent(text),'_blank');
     }
   </script>
 </body>
 </html>
-
-
-
-
-
-
