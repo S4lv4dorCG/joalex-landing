@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -34,118 +34,101 @@
 
   <!-- ===================== HEADER ===================== -->
   <header class="header">
-
-
-    <!-- ── Barra principal de navegación ── -->
     <div class="header-inner container">
       <div class="logo">
         <a href="index.html" class="header-logo-link">
-          <img src="Logo.jpeg" alt="JOALEX Asesoría Integral" width="120" height="80"
-            style="height: 56px; width: auto; object-fit: contain; display: block; filter: sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 4px rgba(188,139,93,0.5));"
+          <img src="Logo.jpeg" alt="JOALEX Asesoría Integral"
+            style="height:56px;width:auto;object-fit:contain;display:block;filter:sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 4px rgba(188,139,93,0.5));"
             loading="lazy">
         </a>
       </div>
-
-      <!-- ── NAVEGACIÓN DESKTOP ── -->
       <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link nav-link--active">Inicio</a>
+        <a href="mision-vision.html" class="nav-link ">Nosotros</a>
 
-        <a href="#hero" class="nav-link" onclick="closeMobileMenu()">Inicio</a>
-
-        <!-- Dropdown: Nosotros -->
-        <div class="nav-dropdown-wrap" id="dropNosotros">
-          <button class="nav-link nav-dropdown-btn" id="btnNosotros" aria-expanded="false" aria-haspopup="true">
-            Nosotros
+        <!-- Elige tu auto -->
+        <div class="nav-dropdown-wrap" id="dropInventario">
+          <button class="nav-link nav-dropdown-btn " id="btnInventario" aria-expanded="false" aria-haspopup="true">
+            Elige tu auto
             <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </button>
-          <div class="nav-dropdown-menu" id="menuNosotros" role="menu">
-            <a href="acerca-de.html" class="nav-dropdown-item" role="menuitem"><span
-                class="nav-drop-icon">✦</span>Perfil Profesional</a>
-            <a href="mision-vision.html" class="nav-dropdown-item" role="menuitem"><span
-                class="nav-drop-icon">✦</span>Filosofía y Valores</a>
-            <a href="objetivo.html" class="nav-dropdown-item" role="menuitem"><span
-                class="nav-drop-icon">✦</span>Nuestro Compromiso</a>
+          <div class="nav-dropdown-menu" id="menuInventario" role="menu">
+            <a href="nuevo.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg></span>Nuevo</a>
+            <a href="seminuevo.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg></span>Seminuevo</a>
+            <a href="deja-tu-auto.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg></span>Deja tu auto</a>
           </div>
         </div>
 
-        <!-- Dropdown: Soluciones -->
+        <!-- Servicios -->
         <div class="nav-dropdown-wrap" id="dropServicios">
-          <button class="nav-link nav-dropdown-btn" id="btnServicios" aria-expanded="false" aria-haspopup="true">
-            Soluciones
+          <button class="nav-link nav-dropdown-btn " id="btnServicios" aria-expanded="false" aria-haspopup="true">
+            Servicios
             <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </button>
           <div class="nav-dropdown-menu" id="menuServicios" role="menu">
-            <a href="servicios.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Todas
-              las Soluciones</a>
-            <a href="#marcas" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon">✦</span>Catálogo
-              de Marcas</a>
-            <a href="#seminuevos" class="nav-dropdown-item" role="menuitem"><span
-                class="nav-drop-icon">✦</span>Inventario del Mes</a>
-            <a href="index.html#experiencia" class="nav-dropdown-item" role="menuitem"><span
-                class="nav-drop-icon">✦</span>Galería de Entregas</a>
+            <a href="servicios.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg></span>Consulta Servicios</a>
+            <a href="galeria-de-entregas.html" class="nav-dropdown-item" role="menuitem"><span
+                class="nav-drop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  style="width:12px;height:12px">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg></span>Galería de Entregas</a>
           </div>
         </div>
 
-        <a href="servicios.html#contacto" class="nav-link">Consultoría</a>
-
+        <!-- Contacto -->
+        <a href="contacto.html" class="nav-link ">Contacto</a>
       </nav>
-
-      <!-- ── CTA header ── -->
-      <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20evaluar%20mis%20opciones%20de%20cr%C3%A9dito"
-        class="header-wa-cta" target="_blank" rel="noopener noreferrer" id="headerWaCta">
-        <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;">
-          <path
-            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-          <path
-            d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
-        </svg>
-        Escríbenos
-      </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- ── NAVEGACIÓN MÓVIL ── -->
     <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil">
-      <a href="#hero" class="mobile-nav-link" onclick="closeMobileMenu()">Inicio</a>
+      <a href="index.html" class="mobile-nav-link nav-link--active">Inicio</a>
+      <a href="mision-vision.html" class="mobile-nav-link ">Nosotros</a>
 
       <div class="mobile-accordion">
         <button class="mobile-accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false">
-          Nosotros <span class="mobile-acc-arrow">›</span>
+          Elige tu auto <span class="mobile-acc-arrow">></span>
         </button>
         <div class="mobile-accordion-body">
-          <a href="acerca-de.html">Perfil Profesional</a>
-          <a href="mision-vision.html">Filosofía y Valores</a>
-          <a href="objetivo.html">Nuestro Compromiso</a>
+          <a href="nuevo.html">Nuevo</a>
+          <a href="seminuevo.html">Seminuevo</a>
+          <a href="deja-tu-auto.html">Deja tu auto</a>
         </div>
       </div>
 
       <div class="mobile-accordion">
         <button class="mobile-accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false">
-          Soluciones <span class="mobile-acc-arrow">›</span>
+          Servicios <span class="mobile-acc-arrow">></span>
         </button>
         <div class="mobile-accordion-body">
-          <a href="servicios.html">CatÃ¡logo de Soluciones</a>
-          <a href="#marcas" onclick="closeMobileMenu()">Catálogo de Marcas</a>
-          <a href="#seminuevos" onclick="closeMobileMenu()">Inventario del Mes</a>
-          <a href="index.html#experiencia" onclick="closeMobileMenu()">Galería de Entregas</a>
+          <a href="servicios.html">Consulta Servicios</a>
+          <a href="galeria-de-entregas.html">Galería de Entregas</a>
         </div>
       </div>
 
-      <a href="servicios.html#contacto" class="mobile-nav-link" onclick="closeMobileMenu()">Consultoría</a>
-      <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20informes%20de%20un%20auto"
-        class="mobile-nav-link mobile-wa-link" target="_blank" rel="noopener noreferrer">
-        ✦ WhatsApp: 56 1090 1116
-      </a>
+      <a href="contacto.html" class="mobile-nav-link ">Contacto</a>
     </nav>
-
   </header>
 
   <!-- ===================== HERO ===================== -->
@@ -173,42 +156,7 @@
           Sin trámites lentos, sin letras chiquitas.
         </p>
 
-        <div class="hero-tags hero-tags-optimized">
-          <!-- Destacados -->
-          <span class="tag badge-gold-bg"
-            onclick="document.getElementById('marcas').scrollIntoView({behavior:'smooth',block:'start'})"
-            title="Ver Marcas">Encuentra la Marca de tu elección</span>
-          <span class="tag badge-gold-bg"
-            onclick="document.getElementById('seminuevos').scrollIntoView({behavior:'smooth',block:'start'})"
-            title="Seminuevos disponibles">Busca tu seminuevo</span>
-          <span class="tag badge-gold-bg"
-            onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth',block:'start'})"
-            title="Deja tu auto a cuenta">Deja tu Auto a cuenta</span>
-          <span class="tag badge-gold-bg"
-            onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth',block:'center'})"
-            title="Cotiza tu auto ahora">Cotiza tu auto ahora</span>
-
-          <!-- Compromisos -->
-          <span class="tag"><span class="check" style="margin-right: 4px; color: var(--gold-light);">✓</span>
-            No estamos casados con ninguna marca</span>
-          <span class="tag"><span class="check" style="margin-right: 4px; color: var(--gold-light);">✓</span>
-            Comparamos opciones para tomar la mejor decisión financiera</span>
-          <span class="tag"><span class="check" style="margin-right: 4px; color: var(--gold-light);">✓</span>
-            Trabajamos con múltiples Bancos</span>
-          <span class="tag"><span class="check" style="margin-right: 4px; color: var(--gold-light);">✓</span>
-            Te acompañamos hasta la entrega</span>
-        </div>
         <div class="hero-ctas hero-ctas-optimized">
-          <a href="#seminuevos"
-            class="btn" onclick="document.getElementById('seminuevos').scrollIntoView({behavior:'smooth',block:'start'}); return false;"
-            style="background: #ffffff; color: #060c16; font-weight: 800; box-shadow: 0 6px 24px rgba(0,0,0,0.35); border: none; transition: transform 0.2s ease, box-shadow 0.2s ease;"
-            onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 32px rgba(0,0,0,0.45)'"
-            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 6px 24px rgba(0,0,0,0.35)'">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;">
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
-            Explorar Catálogo
-          </a>
           <div class="call-dropdown">
             <button class="btn btn-call" id="callBtnMain">
               <span class="call-pulse"></span>
@@ -250,212 +198,81 @@
               </a>
             </div>
           </div>
-          <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20hablar%20con%20un%20experto%20sobre%20mi%20pr%C3%B3ximo%20auto"
-            class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Hablar con un Experto</a>
         </div>
       </div>
-    </div>
   </section>
 
-  <!-- ===================== MARCAS ===================== -->
-  <section class="marcas" id="marcas">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Las mejores marcas, en un solo lugar</h2>
-        <p class="section-subtitle">Acceso directo a todas las marcas líderes del mercado. Haz clic para explorar
-          modelos y promociones.</p>
-      </div>
-      <div class="marcas-grid">
-
-        <a href="https://www.vw.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Volkswagen México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/volkswagen" alt="Volkswagen" width="60" height="60"
-              style="object-fit: contain;" loading="lazy" />
-          </div>
-          <span class="marca-name">Volkswagen</span>
-          <span class="marca-url">vw.com.mx ↗</span>
-        </a>
-
-        <a href="https://www.nissan.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Nissan México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/nissan" alt="Nissan" width="60" height="60"
-              style="object-fit: contain;" loading="lazy" />
-          </div>
-          <span class="marca-name">Nissan</span>
-          <span class="marca-url">nissan.com.mx ↗</span>
-        </a>
-
-        <a href="https://www.kia.com/mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="KIA México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/kia" alt="KIA" width="60" height="60" style="object-fit: contain;"
-              loading="lazy" />
-          </div>
-          <span class="marca-name">KIA</span>
-          <span class="marca-url">kia.com/mx ↗</span>
-        </a>
-
-        <a href="https://www.chevrolet.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Chevrolet México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/chevrolet" alt="Chevrolet" width="60" height="60"
-              style="object-fit: contain;" loading="lazy" />
-          </div>
-          <span class="marca-name">Chevrolet</span>
-          <span class="marca-url">chevrolet.com.mx ↗</span>
-        </a>
-
-        <a href="https://www.toyota.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Toyota México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/toyota" alt="Toyota" width="60" height="60"
-              style="object-fit: contain;" />
-          </div>
-          <span class="marca-name">Toyota</span>
-          <span class="marca-url">toyota.mx ↗</span>
-        </a>
-
-        <a href="https://www.mazda.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Mazda México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/mazda" alt="Mazda" width="60" height="60" style="object-fit: contain;"
-              loading="lazy" />
-          </div>
-          <span class="marca-name">Mazda</span>
-          <span class="marca-url">mazda.mx ↗</span>
-        </a>
-
-        <a href="https://www.honda.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Honda México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/honda" alt="Honda" width="60" height="60"
-              style="object-fit: contain;" />
-          </div>
-          <span class="marca-name">Honda</span>
-          <span class="marca-url">honda.mx ↗</span>
-        </a>
-
-        <a href="https://www.ford.mx" target="_blank" rel="noopener noreferrer" class="marca-card" title="Ford México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/ford" alt="Ford" width="66" height="66"
-              style="object-fit: contain;" />
-          </div>
-          <span class="marca-name">Ford</span>
-          <span class="marca-url">ford.mx ↗</span>
-        </a>
-
-        <a href="https://www.hyundai.com/mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Hyundai México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/hyundai" alt="Hyundai" width="64" height="64"
-              style="object-fit: contain;" />
-          </div>
-          <span class="marca-name">Hyundai</span>
-          <span class="marca-url">hyundai.com/mx ↗</span>
-        </a>
-
-        <a href="https://www.jeep.com.mx" target="_blank" rel="noopener noreferrer" class="marca-card"
-          title="Jeep México">
-          <div class="marca-logo">
-            <img src="https://cdn.simpleicons.org/jeep" alt="Jeep" width="60" height="60" style="object-fit: contain;"
-              loading="lazy" />
-          </div>
-          <span class="marca-name">Jeep / RAM</span>
-          <span class="marca-url">jeep.com.mx ↗</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SEMINUEVOS ===================== -->
-  <section class="seminuevos-section" id="seminuevos">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Catálogo de Unidades Disponibles</h2>
-        <p class="section-subtitle">Explora nuestra selección mensual de vehículos certificados. Cada unidad ha sido
-          revisada bajo estrictos estándares de calidad para garantizar tu inversión. Haz clic abajo para ver fichas
-          técnicas, precios y planes de financiamiento.</p>
-      </div>
-      <div class="seminuevos-grid" id="seminuevosGrid">
-
-        <!-- PDF Card 1 -->
-        <div class="pdf-card reveal">
-          <div class="pdf-card-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <line x1="10" y1="9" x2="8" y2="9" />
-            </svg>
-            <span class="pdf-type-badge">PDF</span>
-          </div>
-          <p class="pdf-card-name">CATÁLOGO SEMINUEVOS VW 07 ABRIL</p>
-          <a href="CATALOGO SEMINUEVOS VW 07 ABRIL.pdf" class="btn btn-secondary pdf-dl-btn" target="_blank"
-            rel="noopener noreferrer" download="Catalogo_VW_Joalex.pdf" aria-label="Descargar catálogo VW">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-            Descargar Catálogo (PDF)
-          </a>
+  <!-- ===================== FEATURE CARDS ===================== -->
+  <section class="fc-section" id="ventajas" aria-label="Por qu&eacute; elegir Joalex">
+    <div class="fc-track-outer">
+      <button class="carousel-btn prev" onclick="moveFCCarousel(-1)" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-btn next" onclick="moveFCCarousel(1)" aria-label="Siguiente">&#10095;</button>
+      <div class="fc-track" id="fcTrack">
+        <!-- Grupo 1 -->
+        <div class="fc-slide-group">
+          <article class="fc-card" style="background:linear-gradient(135deg,#0c1a36 0%,#0e2147 100%);">
+            <div class="fc-card-body"><span class="fc-eyebrow">Estrategia Financiera</span>
+              <h3 class="fc-card-title">Optimiza la compra de tu auto con una estrategia financiera inteligente.</h3>
+            </div>
+            <div class="fc-card-img-wrap"><img src="fc2_estrategia.png" alt="Estrategia financiera" loading="lazy">
+            </div>
+          </article>
+          <article class="fc-card" style="background:linear-gradient(135deg,#053232 0%,#074040 100%);">
+            <div class="fc-card-body"><span class="fc-eyebrow">Comparaci&oacute;n Sin Esfuerzo</span>
+              <h3 class="fc-card-title">Te conectamos con las mejores opciones entre bancos, financieras y agencias.
+              </h3>
+            </div>
+            <div class="fc-card-img-wrap"><img src="fc2_opciones.png" alt="Opciones de financiamiento" loading="lazy">
+            </div>
+          </article>
+          <article class="fc-card" style="background:linear-gradient(135deg,#28073a 0%,#380f50 100%);">
+            <div class="fc-card-body"><span class="fc-eyebrow">Asesor&iacute;a Experta</span>
+              <h3 class="fc-card-title">No tomes una decisi&oacute;n financiera sin asesor&iacute;a de un experto a tu
+                lado.</h3>
+            </div>
+            <div class="fc-card-img-wrap"><img src="fc2_asesoria.png" alt="Asesor&iacute;a experta" loading="lazy">
+            </div>
+          </article>
         </div>
-
-        <!-- PDF Card 2 (Placeholder) -->
-        <div class="pdf-card reveal" style="--reveal-delay: 0.12s;">
-          <div class="pdf-card-icon-wrap" style="opacity:0.5;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <line x1="10" y1="9" x2="8" y2="9" />
-            </svg>
-          </div>
-          <p class="pdf-card-name" style="color:rgba(241,245,249,0.5);">NUEVO CATÁLOGO DISPONIBLE PRONTO</p>
-          <a href="#" class="btn btn-secondary pdf-dl-btn"
-            style="pointer-events: none; opacity: 0.4; cursor: not-allowed; padding-left: 36px; padding-right: 36px;"
-            aria-disabled="true">
-            Próximamente
-          </a>
+        <!-- Grupo 2 -->
+        <div class="fc-slide-group">
+          <article class="fc-card" style="background:linear-gradient(135deg,#2a1800 0%,#3d2400 100%);">
+            <div class="fc-card-body"><span class="fc-eyebrow">Proceso Simplificado</span>
+              <h3 class="fc-card-title">Evita recorrer agencias y procesos confusos. Nosotros lo hacemos por ti.</h3>
+            </div>
+            <div class="fc-card-img-wrap"><img src="fc2_sinestres.png" alt="Proceso simplificado" loading="lazy"></div>
+          </article>
+          <article class="fc-card" style="background:linear-gradient(135deg,#111e10 0%,#182d16 100%);">
+            <div class="fc-card-body"><span class="fc-eyebrow">100% Confiable</span>
+              <h3 class="fc-card-title">Operaciones 100% a trav&eacute;s de concesionarios autorizados.</h3>
+            </div>
+            <div class="fc-card-img-wrap"><img src="fc2_concesionario.png" alt="Concesionario autorizado"
+                loading="lazy"></div>
+          </article>
+          <article class="fc-card fc-card-cta-card">
+            <div class="fc-cta-inner">
+              <span class="fc-eyebrow" style="color:var(--gold-light);">&iquest;Listo para empezar?</span>
+              <h3 style="font-size:1.3rem;font-weight:800;color:#fff;margin:12px 0 20px;line-height:1.35;">Agenda tu
+                asesor&iacute;a<br>sin costo hoy mismo.</h3>
+              <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20mi%20asesoria%20gratuita"
+                class="btn btn-gold" target="_blank" rel="noopener noreferrer"
+                style="display:inline-flex;align-items:center;gap:8px;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;flex-shrink:0">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
+                </svg>
+                Chatear por WhatsApp
+              </a>
+            </div>
+          </article>
         </div>
-
-        <!-- PDF Card 3 (Placeholder) -->
-        <div class="pdf-card reveal" style="--reveal-delay: 0.24s;">
-          <div class="pdf-card-icon-wrap" style="opacity:0.5;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <line x1="10" y1="9" x2="8" y2="9" />
-            </svg>
-          </div>
-          <p class="pdf-card-name" style="color:rgba(241,245,249,0.5);">NUEVO CATÁLOGO DISPONIBLE PRONTO</p>
-          <a href="#" class="btn btn-secondary pdf-dl-btn"
-            style="pointer-events: none; opacity: 0.4; cursor: not-allowed; padding-left: 36px; padding-right: 36px;"
-            aria-disabled="true">
-            Próximamente
-          </a>
-        </div>
-
       </div>
-      <p class="seminuevos-note reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          style="width:15px;height:15px;vertical-align:middle;margin-right:6px;flex-shrink:0;">
-          <circle cx="12" cy="12" r="10" />
-          <line x1="12" y1="8" x2="12" y2="12" />
-          <line x1="12" y1="16" x2="12.01" y2="16" />
-        </svg>
-        El catálogo se actualiza cada mes. Próximamente se cargarán los vehículos disponibles.
-      </p>
+      <div class="fc-dots" id="fcDots">
+        <span class="fc-dot active"></span>
+        <span class="fc-dot"></span>
+      </div>
     </div>
   </section>
 
@@ -469,8 +286,9 @@
           cabeza durante tu compra.</p>
       </div>
       <div class="servicios-grid">
-        <!-- Tarjeta 1: Gestión de Financiamiento (STATIC) -->
-        <div class="servicio-card reveal"
+
+        <!-- Tarjeta 1: Gestión de Financiamiento -->
+        <div class="servicio-card visible"
           style="display:flex; flex-direction:column; align-items:center; text-align:center; padding:32px 24px;">
           <div class="flip-front-icon" style="margin: 0 auto 24px; position:static; transform:none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -483,7 +301,9 @@
               <polygon points="12 2 20 7 4 7"></polygon>
             </svg>
           </div>
-          <p style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">Gestión de Financiamiento</p>
+          <p
+            style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">
+            Gestión de Financiamiento</p>
           <h3 style="margin-bottom: 16px; font-size: 1.35rem; font-weight:800; color: white;">Tu crédito, aprobado.</h3>
           <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.72); margin-bottom: 24px;">No dejes
             tu inversión al azar. Gestiono las mejores tasas con instituciones bancarias y financieras para que pagues
@@ -494,8 +314,8 @@
           </div>
         </div>
 
-        <!-- Tarjeta 2: Compra y Venta Estratégica (STATIC) -->
-        <div class="servicio-card reveal"
+        <!-- Tarjeta 2: Compra y Venta Estratégica -->
+        <div class="servicio-card visible"
           style="display:flex; flex-direction:column; align-items:center; text-align:center; padding:32px 24px; --reveal-delay:0.1s;">
           <div class="flip-front-icon" style="margin: 0 auto 24px; position:static; transform:none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -504,8 +324,11 @@
               <line x1="7" y1="7" x2="7.01" y2="7"></line>
             </svg>
           </div>
-          <p style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">Compra y Venta Estratégica</p>
-          <h3 style="margin-bottom: 16px; font-size: 1.35rem; font-weight:800; color: white;">Maximiza tu inversión.</h3>
+          <p
+            style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">
+            Compra y Venta Estratégica</p>
+          <h3 style="margin-bottom: 16px; font-size: 1.35rem; font-weight:800; color: white;">Maximiza tu inversión.
+          </h3>
           <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.72); margin-bottom: 24px;">Si
             vendes, lo hacemos al mejor precio de mercado. Si compras, te garantizamos una unidad inspeccionada y lista
             para rodar.</p>
@@ -515,405 +338,163 @@
           </div>
         </div>
 
-        <!-- Tarjeta 3: Asesoría Multimarca (STATIC) -->
-        <div class="servicio-card reveal"
+        <!-- Tarjeta 3: Asesoría Multimarca -->
+        <div class="servicio-card visible"
           style="display:flex; flex-direction:column; align-items:center; text-align:center; padding:32px 24px; --reveal-delay:0.2s;">
           <div class="flip-front-icon" style="margin: 0 auto 24px; position:static; transform:none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
               stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
             </svg>
           </div>
-          <p style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">Asesoría Multimarca</p>
+          <p
+            style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">
+            Asesoría Multimarca</p>
           <h3 style="margin-bottom: 16px; font-size: 1.35rem; font-weight:800; color: white;">Libertad de elección.</h3>
           <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.72); margin-bottom: 24px;">Al ser
             asesor externo, mi lealtad es contigo, no con una agencia. Buscamos la marca y modelo que realmente
             necesitas entre las mejores opciones del mercado.</p>
           <div class="servicio-tags" style="justify-content: center; margin-top: auto;">
             <span>Sin compromiso de marca</span>
-            <span>Elección libre</span>
+            <span>Elecci�n libre</span>
           </div>
         </div>
 
       </div>
 
       <!-- Aliados Financieros (Logos) -->
-      <div class="bank-logos-wrap reveal"
+      <div class="bank-logos-wrap visible"
         style="margin-top: 60px; text-align:center; padding-top:40px; border-top:1px solid rgba(188,139,93,0.15); margin-bottom: 60px;">
         <p
           style="font-size:0.85rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold-light); margin-bottom:24px; font-weight:700;">
           Aliados Financieros</p>
         <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:32px; opacity:0.6; align-items:center;">
-          <!-- EJEMPLOS GENÉRICOS (ESPACIOS PARA LOGOS REALES) -->
           <div style="font-weight:900; font-size:1.4rem; letter-spacing:-1px;">BBVA</div>
           <div style="font-weight:900; font-size:1.4rem; font-family:serif;">Santander</div>
           <div style="font-weight:900; font-size:1.4rem; letter-spacing:1px; font-style:italic;">BANORTE</div>
           <div style="font-weight:900; font-size:1.4rem; letter-spacing:-1px;">citibanamex</div>
           <div style="font-weight:900; font-size:1.4rem;">HSBC</div>
           <div style="font-weight:900; font-size:1.4rem; font-family:serif;">Scotiabank</div>
-          <div style="border:1px dashed rgba(255,255,255,0.3); padding:8px 16px; font-size:0.8rem; border-radius:4px;">+
-            Espacio para Logo...</div>
         </div>
       </div>
 
-      <!-- Banner Programa de Referidos -->
-      <div class="servicio-card beneficio-banner reveal">
-        <div class="beneficio-icon-wrap">
-          <div class="beneficio-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="2"
-              style="width: 28px; height: 28px;">
-              <rect x="3" y="8" width="18" height="4" rx="1" ry="1"></rect>
-              <path d="M12 8v13"></path>
-              <path d="M19 12v10H5V12"></path>
-              <path d="M12 8L12 8a3 3 0 0 0-3-3H6.5a2.5 2.5 0 0 0 0 5H12z"></path>
-              <path d="M12 8L12 8a3 3 0 0 1 3-3h2.5a2.5 2.5 0 0 1 0 5H12z"></path>
-            </svg>
-          </div>
-          <div class="beneficio-text">
-            <h4>🎁 ¿Ya eres cliente? ¡Comparte y gana!</h4>
-            <p>Recomienda a un amigo o familiar. Cuando compre su auto, te obsequio la <strong>aplicación de
-                <span onclick="openNanoModal()"
-                  style="color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; transition: color 0.2s;"
-                  onmouseover="this.style.color='white'" onmouseout="this.style.color='var(--gold-light)'"
-                  title="Ver detalles del tratamiento">nanotecnología</span></strong> para tu vehículo — completamente
-              gratis.</p>
-          </div>
-        </div>
-        <div class="beneficio-btn-wrap">
-          <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20ya%20soy%20cliente%20y%20quiero%20referir%20a%20un%20conocido"
-            class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-              <path
-                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
-            </svg>
-            Quiero recomendar a alguien
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===================== EXPERIENCIA JOALEX ===================== -->
-  <section class="experiencia section-padding" id="experiencia">
-    <div class="container fade-in">
-      <div class="section-header reveal">
-        <h2 class="section-title">Calidad en Movimiento</h2>
-        <p class="section-subtitle">Conoce las unidades que han pasado por nuestras manos.</p>
-        <p class="section-subtitle" style="max-width:700px; margin: 12px auto 0;">
-          Más que imágenes, es el resultado de nuestra búsqueda por la excelencia. Aquí puedes ver de cerca los
-          detalles, acabados y el estado real de los vehículos que gestionamos para nuestros clientes.</p>
-      </div>
-
-      <!-- Carrusel de Galería -->
-      <div class="carousel-container mt-4" id="galleryCarouselWrap" style="position: relative;">
-        <div class="carousel-track gallery-track" id="galleryTrack"
-          style="align-items: stretch; scroll-snap-type: x mandatory; scroll-behavior: smooth;">
-          <!-- Grupo 1 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Volkswagen_blanco.jpg" alt="Volkswagen Blanco" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>¡Llaves en mano, sueño cumplido!</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Volkswagen_blan.jpg" alt="Volkswagen Blanco 2" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Tu próximo capítulo empieza hoy</span></div>
-            </div>
-          </div>
-          <!-- Grupo 2 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Volkswagen_azul.jpg" alt="Volkswagen Azul" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Elegancia pura sobre ruedas</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Honda_plata.png" alt="Honda Plata" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Un cliente más, una historia única</span></div>
-            </div>
-          </div>
-          <!-- Grupo 3 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Volkswagen_negro.jpeg" alt="Volkswagen Negro" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Confianza e innovación</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Volkswagen_negro2.jpg" alt="Volkswagen Negro 2" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Detalles que marcan la diferencia</span></div>
-            </div>
-          </div>
-          <!-- Grupo 4 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Volkswagen_negro3.jpeg" alt="Volkswagen Negro 3" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Listos para rodar con estilo</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Volkswagen_SUV.png" alt="Volkswagen SUV" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>La aventura te espera</span></div>
-            </div>
-          </div>
-          <!-- Grupo 5 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Volkswagen_rojo.jpg" alt="Volkswagen Rojo" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>La intensidad de un nuevo inicio</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Volkswagen_rojo1.jpeg" alt="Volkswagen Rojo 2" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Deportividad a tu alcance</span></div>
-            </div>
-          </div>
-          <!-- Grupo 6 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Kia_dorado.jpeg" alt="Kia Dorado" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>El momento que tanto esperabas</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Volkswagen_varios.png" alt="Entregas Multimarca" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Satisfacción en cada entrega</span></div>
-            </div>
-          </div>
-          <!-- Grupo 7 -->
-          <div class="gallery-slide">
-            <div class="gallery-card">
-              <img src="Volkswagen_camioneta.jpg" alt="Volkswagen Camioneta" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Espacio y confort para tu familia</span></div>
-            </div>
-            <div class="gallery-card">
-              <img src="Volkswagen_verde.jpg" alt="Volkswagen Verde" width="400" height="300" loading="lazy"
-                style="object-fit: cover;">
-              <div class="gallery-overlay"><span>Un color único para una meta cumplida</span></div>
-            </div>
-          </div>
-          <!-- Grupo 8: Videos -->
-          <div class="gallery-slide" id="gallery-slide-videos">
-            <div class="gallery-card gallery-card-video">
-              <video src="Video_vol.mp4" muted playsinline loop preload="none"
-                style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
-                onclick="this.paused ? this.play() : this.pause()" title="Haz clic para reproducir o pausar"></video>
-              <div class="gallery-overlay"><span>Entrega Volkswagen</span></div>
-            </div>
-            <div class="gallery-card gallery-card-video">
-              <video src="Kia_dor.mp4" muted playsinline loop preload="none"
-                style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
-                onclick="this.paused ? this.play() : this.pause()" title="Haz clic para reproducir o pausar"></video>
-              <div class="gallery-overlay"><span>Entrega Kia</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Indicadores -->
-      <div id="galleryDots" style="display:flex;justify-content:center;gap:8px;margin-top:16px;">
-        <span class="gallery-dot active" onclick="goToGallerySlide(0)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(1)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(2)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(3)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(4)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(5)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(6)"></span>
-        <span class="gallery-dot" onclick="goToGallerySlide(7)"></span>
-      </div>
-
-
-      <div class="section-header mt-5 fade-in reveal">
-        <h2 class="section-title">¿Cómo trabajamos tu compra?</h2>
-        <p class="section-subtitle" style="max-width: 900px; margin: 0 auto;">Un proceso sencillo, claro y acompañado
-          en todo momento.</p>
-      </div>
-
-      <div class="proceso-grid mt-4 fade-in">
-        <div class="paso">
-          <div class="paso-num">01</div>
-          <div class="paso-content">
-            <h3>Primer contacto</h3>
-            <p>Me cuentas qué tipo de vehículo buscas, tu presupuesto y si quieres crédito o pago de contado.</p>
-          </div>
-        </div>
-        <div class="connector"></div>
-        <div class="paso">
-          <div class="paso-num">02</div>
-          <div class="paso-content">
-            <h3>Búsqueda y opciones</h3>
-            <p>Reviso inventario y te presento alternativas que se ajusten a lo que necesitas.</p>
-          </div>
-        </div>
-        <div class="connector"></div>
-        <div class="paso">
-          <div class="paso-num">03</div>
-          <div class="paso-content">
-            <h3>Crédito y negociación</h3>
-            <p>En caso de financiamiento, te apoyo con el trámite bancario y revisamos condiciones.</p>
-          </div>
-        </div>
-        <div class="connector"></div>
-        <div class="paso">
-          <div class="paso-num">04</div>
-          <div class="paso-content">
-            <h3>Cierre y entrega</h3>
-            <p>Coordinamos firma de documentos, revisión del vehículo y entrega final.</p>
-          </div>
-        </div>
-        <div class="connector"></div>
-        <div class="paso">
-          <div class="paso-num">05</div>
-          <div class="paso-content">
-            <h3>Seguimiento post-entrega</h3>
-            <p>No desaparezco después de la entrega. Estoy disponible para cualquier duda, gestión o servicio posterior.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="experiencia-note mt-4 text-center">
-        Desde tu primer mensaje hasta el momento en que quitamos la funda de tu auto nuevo, estoy contigo en cada paso.
-        Que disfrutes el proceso es parte del trato.
-      </div>
     </div>
   </section>
 
   <!-- ===================== TESTIMONIOS ===================== -->
   <section class="testimonios section-padding" id="testimonios">
     <div class="container fade-in">
-      <div class="section-header text-center reveal">
-        <h2 class="section-title">Historias de éxito al volante.</h2>
-        <p class="section-subtitle" style="max-width: 900px; margin: 0 auto;">Cientos de clientes ya han transformado
-          su forma de comprar autos. Su confianza es mi mejor garantía.</p>
+      <div class="section-header text-center reveal visible" style="opacity:1;transform:none;">
+        <h2 class="section-title"
+          style="background:none;-webkit-background-clip:unset;background-clip:unset;-webkit-text-fill-color:white;color:white;">
+          Historias de éxito al volante.</h2>
+        <p class="section-subtitle"
+          style="max-width: 900px; margin: 0 auto; -webkit-text-fill-color:rgba(255,255,255,0.72); color:rgba(255,255,255,0.72);">
+          Cientos de clientes ya han transformado su forma de comprar autos. Su confianza es mi mejor garantía.</p>
       </div>
 
       <!-- Carrusel de Testimonios -->
-      <div class="carousel-container mt-4" style="position: relative;">
-        <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
-        <div class="carousel-track" id="reviewsTrack">
-          <div class="testimonio-card">
-            <div class="testimonio-rating">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            </div>
-            <p class="testimonio-texto">"Josue se encargó de todo el trámite. Logró conseguirme un crédito con tasa
-              preferencial y el auto me lo entregaron impecable. ¡Súper recomendado!"</p>
-            <div class="testimonio-autor">
-              <strong>Carlos M.</strong>
-              <span>Adquirió un VW Taos</span>
-            </div>
-          </div>
 
-          <div class="testimonio-card">
-            <div class="testimonio-rating">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            </div>
-            <p class="testimonio-texto">"Buscaba un modelo muy específico y además de encontrarlo, conseguimos un precio
-              mejor que en agencia. Da mucha confianza tratar con un profesional."</p>
-            <div class="testimonio-autor">
-              <strong>Ana L.</strong>
-              <span>Adquirió un Mazda 3</span>
-            </div>
+      <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <div class="carousel-track" id="reviewsTrack">
+        <div class="testimonio-card">
+          <div class="testimonio-rating">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-
-          <div class="testimonio-card">
-            <div class="testimonio-rating">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            </div>
-            <p class="testimonio-texto">"Evité tener que ir a perder el tiempo a un montón de lugares. Josue me mandó
-              las opciones, escogimos la mejor, aprobó mi crédito y ¡listo! Súper fácil."</p>
-            <div class="testimonio-autor">
-              <strong>Roberto G.</strong>
-              <span>Adquirió un Kia Forte</span>
-            </div>
+          <p class="testimonio-texto">"Josue se encargó de todo el trámite. Logró conseguirme un crédito con tasa
+            preferencial y el auto me lo entregaron impecable. ¡Súper recomendado!"</p>
+          <div class="testimonio-autor">
+            <strong>Carlos M.</strong>
+            <span>Adquirió un VW Taos</span>
           </div>
         </div>
-        <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
-      </div>
 
-      <!-- Reseña CTA -->
-      <div class="review-cta mt-5 text-center"
-        style="max-width: 900px; margin: 0 auto; background: rgba(145,104,64,0.1); border: 1px dashed rgba(145,104,64,0.4); padding: 32px; border-radius: var(--radius);">
-        <h3 style="color: white; margin-bottom: 8px; font-size: 1.2rem;">¿Ya estás estrenando con Joalex?</h3>
-        <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 0.95rem;">Cuéntanos cómo fue tu
-          experiencia. Tu reseña ayuda a otros a tomar la mejor decisión con confianza.</p>
-        <button type="button" class="btn btn-gold" onclick="openReviewModal()"
-          style="gap: 8px; justify-content: center; display: inline-flex; border: none; cursor: pointer;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            style="width: 20px; height: 20px;">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-          </svg>
-          ✍️ Escribir mi reseña
-        </button>
+        <div class="testimonio-card">
+          <div class="testimonio-rating">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="testimonio-texto">"Buscaba un modelo muy específico y además de encontrarlo, conseguimos un precio
+            mejor que en agencia. Da mucha confianza tratar con un profesional."</p>
+          <div class="testimonio-autor">
+            <strong>Ana L.</strong>
+            <span>Adquirió un Mazda 3</span>
+          </div>
+        </div>
+
+        <div class="testimonio-card">
+          <div class="testimonio-rating">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="testimonio-texto">"Evité tener que ir a perder el tiempo a un montón de lugares. Josue me mandó las
+            opciones, escogimos la mejor, aprobó mi crédito y ¡listo! Súper fácil."</p>
+          <div class="testimonio-autor">
+            <strong>Roberto G.</strong>
+            <span>Adquirió un Kia Forte</span>
+          </div>
+        </div>
       </div>
+      <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+
+    <!-- Reseña CTA -->
+    <div class="review-cta mt-5 text-center"
+      style="max-width: 900px; margin: 0 auto; background: rgba(145,104,64,0.1); border: 1px dashed rgba(145,104,64,0.4); padding: 32px; border-radius: var(--radius);">
+      <h3 style="color: white; margin-bottom: 8px; font-size: 1.2rem;">¿Ya estás estrenando con Joalex?</h3>
+      <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 0.95rem;">Cuéntanos cómo fue tu
+        experiencia. Tu reseña ayuda a otros a tomar la mejor decisión con confianza.</p>
+      <button type="button" class="btn btn-gold" onclick="openReviewModal()"
+        style="gap: 8px; justify-content: center; display: inline-flex; border: none; cursor: pointer;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        Escribir mi reseña
+      </button>
+    </div>
 
     </div>
 
@@ -936,7 +517,7 @@
               <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 estrella">★</label>
             </div>
             <span id="rating-error"
-              style="display:none; color:#f87171; font-size:0.8rem; margin-top:6px; font-weight:600;">⚠️ Por favor
+              style="display:none; color:#f87171; font-size:0.8rem; margin-top:6px; font-weight:600;">Por favor
               selecciona una calificación antes de publicar.</span>
           </div>
           <div class="form-group">
@@ -962,6 +543,7 @@
     </div>
   </section>
 
+
   <!-- ===================== MODAL NANOTECNOLOGIA ===================== -->
   <div class="modal-overlay" id="nanoModal" onclick="if(event.target === this) closeNanoModal()">
     <div class="form-container modal-content"
@@ -969,148 +551,46 @@
       <button type="button" class="modal-close" onclick="closeNanoModal()" aria-label="Cerrar">&times;</button>
       <div class="modal-header" style="margin-top: 8px;">
         <h3 style="font-size: 1.5rem; margin-bottom: 4px;">Protección y Brillo (Nanotecnología)</h3>
-        <p style="font-size: 0.9rem; color: var(--gold); font-weight: 500;">Un toque extra de cuidado para tu próximo auto.</p>
+        <p style="font-size: 0.9rem; color: var(--gold); font-weight: 500;">Un toque extra de cuidado para tu próximo
+          auto.</p>
       </div>
       <div class="modal-body"
         style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.8); padding-top: 0; text-align: left;">
-        <p style="margin-bottom: 24px;">Como parte de nuestro servicio, aplicamos un tratamiento básico de nanotecnología
-          diseñado para mejorar la estética de tu vehículo:</p>
-
+        <p style="margin-bottom: 24px;">Como parte de nuestro servicio, aplicamos un tratamiento básico de
+          nanotecnología diseñado para mejorar la estética de tu vehículo:</p>
         <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px;">
           <li style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="font-size: 1.2rem; filter: drop-shadow(0 0 4px rgba(255,215,0,0.5));">✨</span>
+            <span style="font-size: 1.2rem; filter: drop-shadow(0 0 4px rgba(255,215,0,0.5));">&#10024;</span>
             <div><strong style="color: white; font-weight: 600;">Mayor Brillo:</strong> Resalta el color y le da un
               acabado más reluciente a la carrocería.</div>
           </li>
           <li style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="font-size: 1.2rem; filter: drop-shadow(0 0 4px rgba(255,215,0,0.5));">💧</span>
-            <div><strong style="color: white; font-weight: 600;">Fácil Limpieza:</strong> Ayuda a repeler el polvo y
-              el agua de forma ligera.</div>
+            <span style="font-size: 1.2rem; filter: drop-shadow(0 0 4px rgba(255,215,0,0.5));">&#10024;</span>
+            <div><strong style="color: white; font-weight: 600;">Fácil Limpieza:</strong> Ayuda a repeler el polvo y el
+              agua de forma ligera.</div>
           </li>
           <li style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="font-size: 1.2rem; filter: drop-shadow(0 0 4px rgba(255,215,0,0.5));">🛡️</span>
-            <div><strong style="color: white; font-weight: 600;">Capa Protectora:</strong> Brinda una protección
-              inicial contra el sol y el clima.</div>
+            <span style="font-size: 1.2rem; filter: drop-shadow(0 0 4px rgba(255,215,0,0.5));">&#10024;</span>
+            <div><strong style="color: white; font-weight: 600;">Capa Protectora:</strong> Brinda una protección inicial
+              contra el sol y el clima.</div>
           </li>
         </ul>
       </div>
     </div>
   </div>
-
-  <!-- ===================== CONTACTO ===================== -->
-  <section class="contacto" id="contacto" style="padding: clamp(60px,8vw,90px) 0;">
-    <div class="container">
-      <div class="section-header text-center reveal" style="margin-bottom: 48px;">
-        <h2 class="section-title">Iniciemos tu próximo proyecto hoy mismo.</h2>
-        <p class="section-subtitle" style="max-width: 900px; margin: 0 auto;">Cuéntanos qué auto tienes en mente y
-          recibirás una propuesta de asesoría en menos de 24 horas.</p>
-      </div>
-      <div class="fade-in"
-        style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: stretch;">
-
-        <!-- Card: WhatsApp -->
-        <div
-          style="flex: 1; min-width: 240px; max-width: 300px; background: rgba(255,255,255,0.025); border: 1px solid rgba(145,104,64,0.25); border-radius: var(--radius); padding: 32px 28px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; transition: border-color 0.3s, box-shadow 0.3s;"
-          onmouseover="this.style.borderColor='rgba(145,104,64,0.5)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.3)'"
-          onmouseout="this.style.borderColor='rgba(145,104,64,0.25)';this.style.boxShadow='none'">
-          <div
-            style="width:56px;height:56px;border-radius:50%;background:rgba(37,211,102,0.1);display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 24 24" fill="#25D366" style="width:28px;height:28px;">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-              <path
-                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
-            </svg>
-          </div>
-          <h3 style="font-size:1.1rem;color:white;margin:0;">Solicitar Asesoría Personalizada</h3>
-          <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);margin:0;">Cuéntame qué auto tienes en mente y te
-            respondo en menos de 24 horas.</p>
-          <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20solicitar%20asesor%C3%ADa%20personalizada"
-            class="btn btn-primary" target="_blank" rel="noopener noreferrer"
-            style="width:100%;justify-content:center;display:flex;align-items:center;gap:8px;margin-top:auto;">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-              <path
-                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
-            </svg>
-            Solicitar Asesoría Personalizada
-          </a>
-        </div>
-
-        <!-- Card: Servicios -->
-        <div
-          style="flex: 1; min-width: 240px; max-width: 300px; background: rgba(255,255,255,0.025); border: 1px solid rgba(145,104,64,0.25); border-radius: var(--radius); padding: 32px 28px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; transition: border-color 0.3s, box-shadow 0.3s;"
-          onmouseover="this.style.borderColor='rgba(145,104,64,0.5)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.3)'"
-          onmouseout="this.style.borderColor='rgba(145,104,64,0.25)';this.style.boxShadow='none'">
-          <div
-            style="width:56px;height:56px;border-radius:50%;background:rgba(145,104,64,0.12);display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.8"
-              style="width:28px;height:28px;">
-              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-              <rect x="9" y="3" width="6" height="4" rx="1" />
-              <path d="M9 12h6M9 16h4" />
-            </svg>
-          </div>
-          <h3 style="font-size:1.1rem;color:white;margin:0;">Asesoría jurídica y más</h3>
-          <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);margin:0;">Aliados en servicios legales, contables,
-            inmuebles y más.</p>
-          <a href="https://wa.me/5215610901116?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20asesor%C3%ADa%20jur%C3%ADdica"
-            class="btn btn-primary" target="_blank" rel="noopener noreferrer"
-            style="width:100%;justify-content:center;display:flex;align-items:center;gap:8px;margin-top:auto;">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-              <path
-                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.557 4.116 1.532 5.845L.057 23.57a.75.75 0 0 0 .916.916l5.733-1.474A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.95-1.358l-.355-.212-3.682.946.965-3.568-.232-.368A9.717 9.717 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
-            </svg>
-            WhatsApp
-          </a>
-        </div>
-
-        <!-- Card: Ubicación -->
-        <div
-          style="flex: 1; min-width: 240px; max-width: 300px; background: rgba(255,255,255,0.025); border: 1px solid rgba(145,104,64,0.25); border-radius: var(--radius); padding: 32px 28px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; transition: border-color 0.3s, box-shadow 0.3s;"
-          onmouseover="this.style.borderColor='rgba(145,104,64,0.5)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.3)'"
-          onmouseout="this.style.borderColor='rgba(145,104,64,0.25)';this.style.boxShadow='none'">
-          <div
-            style="width:56px;height:56px;border-radius:50%;background:rgba(145,104,64,0.12);display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;color:var(--gold-light);">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-            </svg>
-          </div>
-          <h3 style="font-size:1.1rem;color:white;margin:0;">Encuéntrame aquí</h3>
-          <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);margin:0;">Encinos 136, Miguel Hidalgo 4ta Secc,
-            Tlalpan, CDMX.</p>
-          <a href="https://share.google/NDEFLMH5rmBPbDOVB" class="btn btn-google" target="_blank"
-            rel="noopener noreferrer"
-            style="width:100%;justify-content:center;display:flex;align-items:center;gap:8px;margin-top:auto;">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-            </svg>
-            Cómo llegar
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container">
-      <!-- Grid principal 3 columnas -->
       <div id="footerGrid" class="footer-grid">
+
         <!-- Col 1: Logo + redes -->
         <div class="footer-col footer-about">
           <a href="index.html" class="footer-logo-wrap" style="display:inline-block; margin-bottom: 20px;">
-            <img src="Logo.jpeg" alt="JOALEX Asesoría" class="footer-logo-img"
+            <img src="Logo.jpeg" alt="JOALEX Asesor&iacute;a Integral" class="footer-logo-img"
               style="height: 60px; width: auto; object-fit: contain; border-radius: 4px; filter: sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 6px rgba(188,139,93,0.4));">
           </a>
           <div class="footer-social">
-            <p class="footer-label">Síguenos en:</p>
+            <p class="footer-label">S&iacute;guenos en:</p>
             <div class="footer-social-links">
               <a href="https://www.facebook.com/josue.alegre.142" target="_blank" rel="noopener noreferrer"
                 class="social-btn facebook" title="Facebook">
@@ -1132,15 +612,18 @@
           </div>
         </div>
 
-        <!-- Col 2: Navegación rápida -->
+        <!-- Col 2: Navegacion -->
         <div class="footer-col footer-nav">
-          <h4 class="footer-title">Navegación</h4>
+          <h4 class="footer-title">Navegaci&oacute;n</h4>
           <ul class="footer-links">
-            <li><a href="servicios.html"><span>✦</span> Servicios</a></li>
-            <li><a href="acerca-de.html"><span>✦</span> Perfil Profesional</a></li>
-            <li><a href="index.html#experiencia"><span>✦</span> Experiencia Joalex</a></li>
-            <li><a href="index.html#testimonios"><span>✦</span> Historias de Éxito</a></li>
-            <li><a href="servicios.html#contacto"><span>✦</span> Contacto</a></li>
+            <li><a href="index.html"><span>&#8250;</span> Inicio</a></li>
+            <li><a href="mision-vision.html"><span>&#8250;</span> Nosotros</a></li>
+            <li><a href="nuevo.html"><span>&#8250;</span> Auto Nuevo</a></li>
+            <li><a href="seminuevo.html"><span>&#8250;</span> Auto Seminuevo</a></li>
+            <li><a href="deja-tu-auto.html"><span>&#8250;</span> Deja tu Auto</a></li>
+            <li><a href="servicios.html"><span>&#8250;</span> Servicios</a></li>
+            <li><a href="galeria-de-entregas.html"><span>&#8250;</span> Galer&iacute;a de Entregas</a></li>
+            <li><a href="contacto.html"><span>&#8250;</span> Contacto</a></li>
           </ul>
         </div>
 
@@ -1180,7 +663,8 @@
       <!-- Barra legal inferior -->
       <div class="footer-legal-bar">
         <div class="footer-legal-info">
-          <p>© 2026 Joalex - Asesoría Automotriz de Alto Nivel · Josue Daniel Alegre. Todos los derechos reservados.</p>
+          <p>&copy; 2026 Joalex &mdash; Asesor&iacute;a Automotriz de Alto Nivel &middot; Josue Daniel Alegre. Todos los
+            derechos reservados.</p>
           <p>Precios y disponibilidad sujetos a cambio sin previo aviso. Sitio meramente informativo.</p>
         </div>
         <div class="footer-privacy-box">
@@ -1189,8 +673,8 @@
             <polyline points="9 12 11 14 15 10" />
           </svg>
           <p>Los datos personales proporcionados son tratados de forma confidencial, exclusivamente para fines de
-            contacto y asesoría, conforme a la <strong>Ley Federal de Protección de Datos Personales (LFPDPPP)</strong>.
-          </p>
+            contacto y asesor&iacute;a, conforme a la <strong>Ley Federal de Protecci&oacute;n de Datos Personales
+              (LFPDPPP)</strong>.</p>
         </div>
       </div>
     </div>
@@ -1209,7 +693,7 @@
   </a>
 
   <script>
-    // ── Menú Móvil ──
+    // Menu Movil
     const menuToggle = document.getElementById('menuToggle');
     const mobileNav = document.getElementById('mobileNav');
 
@@ -1225,14 +709,45 @@
       });
     }
 
-    // Cerrar menú móvil al hacer clic fuera
+    // Cerrar menÃºf�'�?�?T�f�?�â�,��"��f�'â�,�š � m�f�'�?�?T�f�?�â�,��"��f�'â�,�š �vil al hacer clic fuera
     document.addEventListener('click', function (e) {
-      if (!mobileNav.contains(e.target) && !menuToggle.contains(e.target)) {
+      if (mobileNav && !mobileNav.contains(e.target) && menuToggle && !menuToggle.contains(e.target)) {
         closeMobileMenu();
       }
     });
 
-    // ── Acordeón Móvil ──
+    // ── Dropdowns de escritorio: un solo listener, sin stopPropagation ──
+    const allDropBtns = document.querySelectorAll('.nav-dropdown-btn');
+
+    function closeAllDropdowns(except) {
+      allDropBtns.forEach(function(btn) {
+        if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    // Un único listener en document maneja todo: toggle, cierre de otros y cierre al click afuera
+    document.addEventListener('click', function(e) {
+      const clickedBtn = e.target.closest('.nav-dropdown-btn');
+      const clickedWrap = e.target.closest('.nav-dropdown-wrap');
+
+      if (clickedBtn) {
+        // Toggle del dropdown clicado, cierra los demás
+        const isOpen = clickedBtn.getAttribute('aria-expanded') === 'true';
+        closeAllDropdowns(clickedBtn);
+        clickedBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      } else if (!clickedWrap) {
+        // Click fuera de cualquier dropdown → cerrar todos
+        closeAllDropdowns(null);
+      }
+      // Si el click es dentro del menú (pero no en el botón) → no hacer nada
+    });
+
+    // Cerrar con Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeAllDropdowns(null);
+    });
+
+    // Acordeon Movil
     function toggleAccordion(btn) {
       const body = btn.nextElementSibling;
       const isOpen = body.classList.toggle('open');
@@ -1246,7 +761,7 @@
       });
     }
 
-    // Menú de llamadas
+    // Men�f�'�?�?T�f�?�â�,��"��f�'â�,�š � de llamadas
     const callBtn = document.getElementById('callBtnMain');
     const callMenu = document.getElementById('callMenu');
 
@@ -1272,10 +787,10 @@
       const telefono = document.getElementById('telefono').value;
       const tipo = document.getElementById('tipo').value;
       const mensaje = document.getElementById('mensaje').value;
-      const text = `Hola Josue, te contacto desde tu landing page.\n\n\u{1F464} Nombre: ${nombre}\n\u{1F4DE} Teléfono: ${telefono}\n\u{1F697} Interés: ${tipo}\n\u{1F4AC} Mensaje: ${mensaje}`;
+      const text = `Hola Josue, te contacto desde tu landing page.\n\n Nombre: ${nombre}\n Telefono: ${telefono}\n Interes: ${tipo}\n Mensaje: ${mensaje}`;
       window.open(`https://wa.me/5215610901116?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
     }
-    // Enviar Reseña Localmente y Limitar a 20
+    // Enviar Rese�f�'�?�?T�f�?�â�,��"��f�'â�,�š �a Localmente y Limitar a 20
     function submitReview(e) {
       if (e) e.preventDefault();
 
@@ -1296,7 +811,7 @@
       ratingError.style.display = 'none';
 
       if (!nombre || !vehiculo || !comentario) {
-        alert("Por favor completa todos los campos de la reseña.");
+        alert("Por favor completa todos los campos de la resena.");
         return;
       }
 
@@ -1327,7 +842,7 @@
       nombreStrong.textContent = nombre;
 
       const vehiculoSpan = document.createElement('span');
-      vehiculoSpan.textContent = `Adquirió un ${vehiculo}`;
+      vehiculoSpan.textContent = `Adquirio un ${vehiculo}`;
 
       autorDiv.appendChild(nombreStrong);
       autorDiv.appendChild(vehiculoSpan);
@@ -1336,10 +851,10 @@
       card.appendChild(textoP);
       card.appendChild(autorDiv);
 
-      // Añadir al inicio del track
+      // A�f�'�?�?T�f�?�â�,��"��f�'â�,�š �adir al inicio del track
       track.insertBefore(card, track.firstChild);
 
-      // Limitar a máximo 20 testimonios borrando el último
+      // Limitar a m�f�'�?�?T�f�?�â�,��"��f�'â�,�š�ximo 20 testimonios borrando el �f�'�?�?T�f�?�â�,��"��f�'â�,�š Ã©ltimo
       while (track.children.length > 20) {
         track.removeChild(track.lastChild);
       }
@@ -1351,11 +866,11 @@
       // Volver al inicio del carrusel suavemente
       setTimeout(() => { track.scrollTo({ left: 0, behavior: 'smooth' }); }, 100);
 
-      // Opcional: enviar alerta de éxito
-      setTimeout(() => { alert("¡Gracias por tu reseña! Tu opinión ha sido publicada."); }, 400);
+      // Opcional: enviar alerta de �f�'�?�?T�f�?�â�,��"��f�'â�,�š éxito
+      setTimeout(() => { alert("Gracias por tu resena! Tu opinion ha sido publicada."); }, 400);
     }
 
-    // Controles Modal Reseñas
+    // Controles Modal Rese�f�'�?�?T�f�?�â�,��"��f�'â�,�š �as
     function openReviewModal() {
       document.getElementById('reviewModal').classList.add('active');
     }
@@ -1378,7 +893,7 @@
       track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
 
-    // ── Carrusel de Galería ─ Desktop: 2/slide | Móvil: 1/tarjeta (todas visibles) ──
+    // Carrusel de Galeria
     (function () {
       const track = document.getElementById('galleryTrack');
       const wrap = document.getElementById('galleryCarouselWrap');
@@ -1390,7 +905,7 @@
 
       function isMobile() { return window.innerWidth <= 768; }
 
-      // Unidades de navegación: tarjetas individuales en móvil, grupos en desktop
+      // Unidades de navegación: tarjetas individuales en m�vil, grupos en desktop
       function getUnits() {
         return isMobile()
           ? Array.from(track.querySelectorAll('.gallery-card'))
@@ -1405,7 +920,7 @@
       function playVideos() { galleryVideos.forEach(v => { v.load(); v.play().catch(() => { }); }); }
       function pauseVideos() { galleryVideos.forEach(v => { v.pause(); v.currentTime = 0; }); }
 
-      // Reconstruye los dots según el número de unidades actuales
+      // Reconstruye los dots seg�n el n�mero de unidades actuales
       function buildDots() {
         const units = getUnits();
         dotsWrap.innerHTML = '';
@@ -1460,7 +975,7 @@
         if (!isVideoUnit(getUnits()[current])) startTimer();
       });
 
-      // Reconstruir dots al cambiar entre móvil y desktop (resize)
+      // Reconstruir dots al cambiar entre m�vil y desktop (resize)
       let resizeTimer;
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
@@ -1486,7 +1001,7 @@
       startTimer();
     })();
 
-    // ── Animaciones al scroll (IntersectionObserver) ──
+    // Animaciones al scroll (IntersectionObserver)
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1506,7 +1021,7 @@
       revealObserver.observe(el);
     });
 
-    // ── Proceso: activar pasos y conectores al entrar en viewport ──
+    // Proceso: activar pasos y conectores al entrar en viewport
     const pasoObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1528,7 +1043,7 @@
     const procesoGrid = document.querySelector('.proceso-grid');
     if (procesoGrid) pasoObserver.observe(procesoGrid);
 
-    // ── Section Titles: simple fade-up (NO word split — background-clip:text breaks span children) ──
+    // Section Titles: simple fade-up
     const titleRevealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1543,7 +1058,7 @@
       titleRevealObserver.observe(el);
     });
 
-    // ── Word Reveal: subtitles (plain text, works fine with spans) ──
+    // Word Reveal: subtitles
     function splitIntoWords(el) {
       if (!el || el.dataset.split) return;
       el.dataset.split = '1';
@@ -1569,7 +1084,7 @@
       wordObserver.observe(el);
     });
 
-    // ── Stat Counter: count up hero stats ──
+    // Stat Counter: count up hero stats
     function animateCount(el, target, duration = 1400) {
       let start = 0;
       const step = target / (duration / 16);
@@ -1599,6 +1114,20 @@
     document.querySelectorAll('.stat-num[data-target]').forEach(el => {
       counterObserver.observe(el);
     });
+
+    // Feature Cards Carousel — 3 por grupo
+    function moveFCCarousel(direction) {
+      const track = document.getElementById('fcTrack');
+      if (!track) return;
+      track.scrollBy({ left: direction * track.offsetWidth, behavior: 'smooth' });
+      // Actualizar dots
+      setTimeout(() => {
+        const groups = Array.from(track.querySelectorAll('.fc-slide-group'));
+        const dots = Array.from(document.querySelectorAll('#fcDots .fc-dot'));
+        const i = Math.round(track.scrollLeft / track.offsetWidth);
+        dots.forEach((d, j) => d.classList.toggle('active', j === i));
+      }, 400);
+    }
 
   </script>
 

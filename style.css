@@ -90,6 +90,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  padding-top: 84px; /* compensates fixed header height */
 }
 
 .container {
@@ -106,8 +107,10 @@ svg {
 
 /* ===================== HEADER ===================== */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background: rgba(7, 16, 34, 0.95);
   backdrop-filter: blur(16px);
@@ -1008,7 +1011,6 @@ section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.01);
   transition: all 0.4s ease;
-  opacity: 0;
 }
 
 .servicio-card.visible {
@@ -1571,7 +1573,8 @@ section {
   padding: 20px;
 }
 
-.modal-overlay.active {
+.modal-overlay.active,
+.modal-overlay.open {
   opacity: 1;
   visibility: visible;
 }
@@ -1585,7 +1588,8 @@ section {
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.modal-overlay.active .modal-content {
+.modal-overlay.active .modal-content,
+.modal-overlay.open .modal-content {
   transform: translateY(0);
 }
 
@@ -2620,7 +2624,8 @@ body {
 .testimonio-texto {
   flex-grow: 1 !important;
   word-wrap: break-word !important;
-  white-space: pre-wrap !important;
+  white-space: normal !important;  /* pre-wrap rompía el line-clamp */
+  color: rgba(255,255,255,0.9) !important;
 }
 
 .testimonios-track {
@@ -3154,13 +3159,25 @@ body {
   display: inline-block;
 }
 
-/* Excepción: títulos ya con color explícito en secciones claras */
+/* Excepción: títulos en contacto y marcas — texto dorado visible */
 .contacto .section-title,
+#contacto .section-title,
 .marcas .section-title {
   background: var(--grad-gold-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: var(--gold-light);
+}
+
+/* Excepción: testimonios — título siempre visible en blanco */
+.testimonios .section-title,
+.testimonios .section-subtitle {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: white !important;
+  background-clip: unset !important;
+  color: white !important;
 }
 
 /* ── 2. Línea decorativa dorada bajo section-header ── */
@@ -3217,7 +3234,7 @@ body {
 .visual-section,
 .experiencia {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .servicios::before,
@@ -3717,6 +3734,12 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  /* Exception: testimonials title must remain visible */
+  .testimonios .section-title,
+  .testimonios .section-subtitle {
+    -webkit-text-fill-color: white !important;
+    background-clip: unset !important;
+  }
 }
 
 /* ── Container padding responsive ── */
@@ -3818,16 +3841,16 @@ body {
   border-bottom-color: rgba(145, 104, 64, 0.25);
 }
 
-.nav-dropdown-wrap:hover .nav-dropdown-menu,
-.nav-dropdown-wrap:focus-within .nav-dropdown-menu,
-.nav-dropdown-btn[aria-expanded="true"]+.nav-dropdown-menu {
+/* Solo se abre via JS con aria-expanded="true" — sin hover para evitar sobreposición */
+.nav-dropdown-btn[aria-expanded="true"] + .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
 }
 
-.nav-dropdown-wrap:hover .nav-arrow {
+.nav-dropdown-btn[aria-expanded="true"] ~ * .nav-arrow,
+.nav-dropdown-btn[aria-expanded="true"] .nav-arrow {
   transform: rotate(180deg);
 }
 
@@ -3852,13 +3875,14 @@ body {
 
 .nav-drop-icon {
   color: var(--gold);
-  font-size: 0.6rem;
+  font-size: 1rem;
   flex-shrink: 0;
   transition: transform 0.2s;
+  line-height: 1;
 }
 
 .nav-dropdown-item:hover .nav-drop-icon {
-  transform: scale(1.3);
+  transform: translateX(2px) scale(1.15);
 }
 
 /* ── Header WA CTA ── */
@@ -4999,4 +5023,262 @@ body {
 
 .contact-methods-inner {
   padding: 8px 0;
+}
+
+/* =======================================================
+   ✦ FEATURE CARDS (Kavak-style benefit carousel) — v3
+   ======================================================= */
+
+.fc-section {
+  padding: 0 0 4px;
+  background: var(--dark);
+}
+
+.fc-track-outer {
+  position: relative;
+  overflow: hidden;  /* CRÍTICO: limita scrollIntoView al track, no a la página */
+}
+
+.fc-track {
+  display: flex;
+  gap: 0;                    /* sin gap entre grupos — cada grupo es exactamente offsetWidth */
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  cursor: grab;
+  padding: 32px 0 8px;       /* sin padding horizontal para que offsetWidth = viewport */
+  overscroll-behavior-x: contain;
+}
+
+.fc-track::-webkit-scrollbar { display: none; }
+.fc-track.grabbing { cursor: grabbing; }
+
+/* ── Grupo de 3 tarjetas (un "slide") ── */
+.fc-slide-group {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex: 0 0 100%;            /* exactamente el viewport del track */
+  scroll-snap-align: start;
+  min-width: 0;
+  padding: 0 40px;           /* padding visual dentro de cada grupo */
+  box-sizing: border-box;
+}
+
+/* ── Tarjeta base ── */
+.fc-card {
+  flex: 0 0 400px;          /* ancho fijo, visible como tarjeta */
+  height: 260px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  position: relative;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Dentro de un grupo, las tarjetas se reparten el ancho equitativamente */
+.fc-slide-group .fc-card {
+  flex: 1 1 0;
+  min-width: 0;
+  scroll-snap-align: none;
+}
+
+.fc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 54px rgba(0,0,0,0.65);
+}
+
+/* ── Zona de texto (izquierda) ── */
+.fc-card-body {
+  flex: 0 0 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 16px 24px 24px;
+  z-index: 2;
+}
+
+.fc-eyebrow {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+.fc-card-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Zona de imagen (derecha) ── */
+.fc-card-img-wrap {
+  flex: 0 0 48%;
+  position: relative;
+  overflow: hidden;
+}
+
+.fc-card-img-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, transparent 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fc-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.fc-card:hover .fc-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+/* ── Flechas ── */
+.fc-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(188,139,93,0.45);
+  background: rgba(8,18,38,0.85);
+  color: var(--gold-light);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+  transition: background 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+}
+
+.fc-nav:hover {
+  background: rgba(145,104,64,0.3);
+  border-color: var(--gold-light);
+}
+
+.fc-nav-prev { left: 8px; }
+.fc-nav-next { right: 8px; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .fc-track { padding: 20px 0 8px; gap: 0; }
+  /* En móvil los grupos desaparecen — cada tarjeta scrollea individualmente */
+  .fc-slide-group {
+    display: contents;
+  }
+  .fc-slide-group .fc-card {
+    flex: 0 0 85vw;
+    height: 210px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .fc-slide-group .fc-card { flex: 0 0 90vw; height: 190px; }
+  .fc-card-body { padding: 18px 12px 18px 18px; }
+}
+
+/* ── Tarjeta CTA separada ── */
+.fc-card-cta-card {
+  background: linear-gradient(135deg, #916840 0%, #bc8b5d 50%, #7a5430 100%) !important;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.fc-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 36px;
+  height: 100%;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+  margin-bottom: 14px;
+}
+
+.btn-gold:hover {
+  background: rgba(255,255,255,0.28);
+  border-color: #fff;
+  color: #fff;
+}
+
+.fc-call-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.18);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+  letter-spacing: 0.03em;
+}
+
+.fc-call-btn:hover {
+  background: rgba(0,0,0,0.32);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* ── Dots indicadores ── */
+.fc-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 0 8px;
+  background: var(--dark);
+}
+
+.fc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.fc-dot.active {
+  background: var(--gold-light);
+  transform: scale(1.25);
 }
