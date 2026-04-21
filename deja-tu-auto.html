@@ -23,7 +23,7 @@
     <div class="header-inner container">
       <div class="logo">
         <a href="index.html" class="header-logo-link">
-          <img src="Logo.jpeg" alt="JOALEX Asesor&iacute;a Integral"
+          <img src="Logo.jpg" alt="JOALEX Asesor&iacute;a Integral"
             style="height:56px;width:auto;object-fit:contain;display:block;filter:sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 4px rgba(188,139,93,0.5));"
             loading="lazy">
         </a>
@@ -42,7 +42,7 @@
             </svg>
           </button>
           <div class="nav-dropdown-menu" id="menuInventario" role="menu">
-            <a href="nuevo.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><polyline points="9 18 15 12 9 6"/></svg></span>Nuevo</a>
+            <a href="index.html#nuevo" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><polyline points="9 18 15 12 9 6"/></svg></span>Nuevo</a>
             <a href="seminuevo.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><polyline points="9 18 15 12 9 6"/></svg></span>Seminuevo</a>
             <a href="deja-tu-auto.html" class="nav-dropdown-item" role="menuitem"><span class="nav-drop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><polyline points="9 18 15 12 9 6"/></svg></span>Deja tu auto</a>
           </div>
@@ -81,7 +81,7 @@
           Elige tu auto <span class="mobile-acc-arrow">></span>
         </button>
         <div class="mobile-accordion-body">
-          <a href="nuevo.html">Nuevo</a>
+          <a href="index.html#nuevo">Nuevo</a>
           <a href="seminuevo.html">Seminuevo</a>
           <a href="deja-tu-auto.html">Deja tu auto</a>
         </div>
@@ -114,107 +114,187 @@
   <section class="mvv-page-section">
     <div class="container">
 
-      <div class="section-header reveal" style="margin-bottom:56px;">
-        <h2 class="section-title">&iquest;C&oacute;mo funciona el proceso?</h2>
-        <p class="section-subtitle">El intercambio de veh&iacute;culo es una de las opciones m&aacute;s pr&aacute;cticas para reducir el enganche de tu pr&oacute;ximo auto. Aqu&iacute; te explicamos el flujo general.</p>
+      <div class="section-header reveal" style="margin-bottom:56px; text-align:center;">
+        <h2 class="section-title" style="font-size:clamp(2rem, 4vw, 2.8rem); font-family:'Playfair Display', serif; font-style:italic;">&iquest;C&oacute;mo funciona?</h2>
       </div>
 
-      <!-- Pasos -->
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:28px; margin-bottom:64px;">
+      <!-- Pasos (3 steps layout matching reference) -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:30px; margin-bottom:80px; text-align:center; position:relative;" class="process-steps">
+        <!-- Optional connecting line via CSS for desktop can be added -->
 
         <!-- Paso 1 -->
-        <div class="reveal" style="background:rgba(255,255,255,0.03); border:1px solid rgba(188,139,93,0.18); border-radius:20px; padding:36px 28px; position:relative;">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-            <span style="font-weight:900; font-size:1rem; color:#060c16;">1</span>
+        <div class="reveal step-box" style="flex:1; min-width:250px; position:relative; z-index:2;">
+          <div style="width:48px; height:48px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; box-shadow:0 0 0 6px rgba(188,139,93,0.2);">
+            <span style="font-weight:900; font-size:1.2rem; color:#041026;">1</span>
           </div>
-          <h3 style="font-size:1.1rem; font-weight:700; color:white; margin-bottom:12px;">Valuaci&oacute;n del veh&iacute;culo</h3>
-          <p style="font-size:0.9rem; color:rgba(241,245,249,0.65); line-height:1.75;">Se realiza una revisi&oacute;n f&iacute;sica del auto: kilometraje, condici&oacute;n mec&aacute;nica y est&eacute;tica, historial de servicio y situaci&oacute;n legal. Con eso se determina el valor comercial real en el mercado actual.</p>
+          <h3 style="font-size:1.15rem; font-weight:700; color:#0F2D5E; margin-bottom:12px;">Solicita tu cotizaci&oacute;n</h3>
+          <p style="font-size:0.95rem; color:#4B5563; line-height:1.6; max-width:280px; margin:0 auto;">Completa el formulario en menos de 2 minutos.</p>
         </div>
 
         <!-- Paso 2 -->
-        <div class="reveal" style="background:rgba(255,255,255,0.03); border:1px solid rgba(188,139,93,0.18); border-radius:20px; padding:36px 28px; --reveal-delay:0.1s;">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-            <span style="font-weight:900; font-size:1rem; color:#060c16;">2</span>
+        <div class="reveal step-box" style="flex:1; min-width:250px; position:relative; z-index:2; --reveal-delay:0.1s;">
+          <div style="width:48px; height:48px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; box-shadow:0 0 0 6px rgba(188,139,93,0.2);">
+            <span style="font-weight:900; font-size:1.2rem; color:#041026;">2</span>
           </div>
-          <h3 style="font-size:1.1rem; font-weight:700; color:white; margin-bottom:12px;">Oferta formal</h3>
-          <p style="font-size:0.9rem; color:rgba(241,245,249,0.65); line-height:1.75;">Una vez valuado, se presenta una oferta por escrito. Este monto se aplica como enganche o abono al costo del auto nuevo o seminuevo que elijas, reduciendo el monto a financiar.</p>
+          <h3 style="font-size:1.15rem; font-weight:700; color:#0F2D5E; margin-bottom:12px;">Recibe asesor&iacute;a personalizada</h3>
+          <p style="font-size:0.95rem; color:#4B5563; line-height:1.6; max-width:280px; margin:0 auto;">Un experto te contacta con las mejores opciones.</p>
         </div>
 
         <!-- Paso 3 -->
-        <div class="reveal" style="background:rgba(255,255,255,0.03); border:1px solid rgba(188,139,93,0.18); border-radius:20px; padding:36px 28px; --reveal-delay:0.2s;">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-            <span style="font-weight:900; font-size:1rem; color:#060c16;">3</span>
+        <div class="reveal step-box" style="flex:1; min-width:250px; position:relative; z-index:2; --reveal-delay:0.2s;">
+          <div style="width:48px; height:48px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; box-shadow:0 0 0 6px rgba(188,139,93,0.2);">
+            <span style="font-weight:900; font-size:1.2rem; color:#041026;">3</span>
           </div>
-          <h3 style="font-size:1.1rem; font-weight:700; color:white; margin-bottom:12px;">Tr&aacute;mites y documentaci&oacute;n</h3>
-          <p style="font-size:0.9rem; color:rgba(241,245,249,0.65); line-height:1.75;">Se gestionan simult&aacute;neamente el traspaso del auto entregado y los documentos del auto nuevo. Facturas, verificaci&oacute;n vehicular, placas y seguro &mdash; todo coordinado para que no tengas que ir de un lado a otro.</p>
+          <h3 style="font-size:1.15rem; font-weight:700; color:#0F2D5E; margin-bottom:12px;">Elige y estrena tu auto</h3>
+          <p style="font-size:0.95rem; color:#4B5563; line-height:1.6; max-width:280px; margin:0 auto;">Nosotros te acompa&ntilde;amos hasta cerrar la operaci&oacute;n.</p>
         </div>
-
-        <!-- Paso 4 -->
-        <div class="reveal" style="background:rgba(255,255,255,0.03); border:1px solid rgba(188,139,93,0.18); border-radius:20px; padding:36px 28px; --reveal-delay:0.3s;">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-            <span style="font-weight:900; font-size:1rem; color:#060c16;">4</span>
-          </div>
-          <h3 style="font-size:1.1rem; font-weight:700; color:white; margin-bottom:12px;">Entrega de tu nuevo auto</h3>
-          <p style="font-size:0.9rem; color:rgba(241,245,249,0.65); line-height:1.75;">Una vez validados los documentos y aprobado el cr&eacute;dito (si aplica), se agenda la entrega formal. Puedes llegar con tu auto viejo y salir con el nuevo el mismo d&iacute;a.</p>
-        </div>
-
       </div>
 
-      <!-- Lo que debes considerar -->
-      <div style="background:rgba(188,139,93,0.06); border:1px solid rgba(188,139,93,0.2); border-radius:20px; padding:48px 40px; margin-bottom:64px;" class="reveal">
-        <h3 style="font-size:1.25rem; font-weight:800; color:white; margin-bottom:24px;">Lo que debes considerar</h3>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;">
+      <!-- Layout a dos columnas: Consideraciones + Formulario -->
+      <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start; margin-bottom:64px;">
+        
+        <!-- Lo que debes considerar (Left side) -->
+        <div style="flex:1; min-width:320px; background:#FFFFFF; border:1px solid rgba(15,45,94,0.12); border-radius:20px; padding:48px 40px;" class="reveal">
+          <h3 style="font-size:1.25rem; font-weight:800; color:#0F2D5E; margin-bottom:24px;">Lo que debes considerar</h3>
+        <div style="display:flex; flex-direction:column; gap:24px;">
 
           <!-- 1. Valor de mercado → balanza/precio -->
           <div style="display:flex; gap:14px; align-items:flex-start;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:3px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1E5FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block; width:22px; height:22px; flex-shrink:0; margin-top:2px;">
               <path d="M12 3v18M3 9l9-6 9 6M5 20h14"/>
               <path d="M5 9l-2 5a5 5 0 0 0 10 0L11 9"/>
               <path d="M13 9l-2 5a5 5 0 0 0 10 0L19 9"/>
             </svg>
-            <p style="font-size:0.9rem; color:rgba(241,245,249,0.7); line-height:1.7; margin:0;"><strong style="color:white;">Valor de mercado vs. valor sentimental:</strong> El valor que se ofrece es el comercial real, no el que crees que vale tu auto.</p>
+            <p style="font-size:0.9rem; color:#374151; line-height:1.7; margin:0;"><strong style="color:#0F2D5E;">Valor de mercado vs. valor sentimental:</strong> El valor que se ofrece es el comercial real, no el que crees que vale tu auto.</p>
           </div>
 
           <!-- 2. Adeudos o gravámenes → tarjeta de crédito -->
           <div style="display:flex; gap:14px; align-items:flex-start;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:3px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1E5FA8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:block; width:22px; height:22px; flex-shrink:0; margin-top:2px;">
               <rect x="2" y="5" width="20" height="14" rx="2"/>
               <path d="M2 10h20"/>
               <path d="M6 15h2M10 15h4"/>
             </svg>
-            <p style="font-size:0.9rem; color:rgba(241,245,249,0.7); line-height:1.7; margin:0;"><strong style="color:white;">Adeudos o grav&aacute;menes:</strong> Si el auto tiene cr&eacute;dito activo, el saldo debe liquidarse antes o como parte de la operaci&oacute;n.</p>
+            <p style="font-size:0.9rem; color:#374151; line-height:1.7; margin:0;"><strong style="color:#0F2D5E;">Adeudos o grav&aacute;menes:</strong> Si el auto tiene cr&eacute;dito activo, el saldo debe liquidarse antes o como parte de la operaci&oacute;n.</p>
           </div>
 
           <!-- 3. Condición del vehículo → auto/llave -->
           <div style="display:flex; gap:14px; align-items:flex-start;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:3px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1E5FA8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:block; width:22px; height:22px; flex-shrink:0; margin-top:2px;">
               <path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l4 4v4a2 2 0 0 1-2 2h-2"/>
               <circle cx="7.5" cy="17.5" r="2.5"/>
               <circle cx="17.5" cy="17.5" r="2.5"/>
             </svg>
-            <p style="font-size:0.9rem; color:rgba(241,245,249,0.7); line-height:1.7; margin:0;"><strong style="color:white;">Condici&oacute;n del veh&iacute;culo:</strong> Golpes, accesorios, historial de servicio y kilometraje impactan directamente el valor que se ofrece.</p>
+            <p style="font-size:0.9rem; color:#374151; line-height:1.7; margin:0;"><strong style="color:#0F2D5E;">Condici&oacute;n del veh&iacute;culo:</strong> Golpes, accesorios, historial de servicio y kilometraje impactan directamente el valor que se ofrece.</p>
           </div>
 
           <!-- 4. Documentación completa → documento con check -->
           <div style="display:flex; gap:14px; align-items:flex-start;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:3px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1E5FA8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:block; width:22px; height:22px; flex-shrink:0; margin-top:2px;">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
               <polyline points="9 13 11 15 15 11"/>
             </svg>
-            <p style="font-size:0.9rem; color:rgba(241,245,249,0.7); line-height:1.7; margin:0;"><strong style="color:white;">Documentaci&oacute;n completa:</strong> Tarjeta de circulaci&oacute;n, factura original y tenencias pagadas son indispensables para agilizar el traspaso.</p>
+            <p style="font-size:0.9rem; color:#374151; line-height:1.7; margin:0;"><strong style="color:#0F2D5E;">Documentaci&oacute;n completa:</strong> Tarjeta de circulaci&oacute;n, factura original y tenencias pagadas son indispensables para agilizar el traspaso.</p>
           </div>
 
         </div>
       </div>
 
-      <!-- CTA -->
-      <div style="text-align:center;" class="reveal">
-        <h3 style="font-size:1.4rem; font-weight:800; color:white; margin-bottom:12px;">&iquest;Quieres saber cu&aacute;nto vale tu auto?</h3>
-        <p style="font-size:0.95rem; color:rgba(241,245,249,0.6); line-height:1.7; max-width:520px; margin:0 auto 28px;">Env&iacute;anos fotos de tu unidad y los datos b&aacute;sicos (a&ntilde;o, marca, modelo, kilometraje). Te damos una estimaci&oacute;n sin compromiso.</p>
-        <a href="https://wa.me/5215610901116?text=Hola%20Josue,%20quiero%20saber%20cu%C3%A1nto%20vale%20mi%20auto%20para%20dejarlo%20a%20cuenta"
-          class="btn btn-primary" target="_blank" rel="noopener noreferrer">Solicitar valuaci&oacute;n gratuita</a>
+      <!-- MULTI-STEP FORM (Right side) -->
+      <div class="valuation-form-container reveal" style="flex:1; min-width:320px; background:white; border-radius:12px; padding:40px; box-shadow:0 20px 40px rgba(0,0,0,0.25); color:#333;">
+        
+        <!-- Controles ocultos para recolectar data -->
+        <form id="multiStepForm" onsubmit="submitForm(event)">
+          
+          <!-- STEP 1 -->
+          <div id="step-1" class="form-step">
+            <h3 style="font-size:1.4rem; font-weight:800; color:#111; margin-bottom:10px;">Paso 1 de 3</h3>
+            <p style="color:#666; font-size:0.95rem; margin-bottom:24px;">Datos b&aacute;sicos de tu auto actual</p>
+            
+            <div style="margin-bottom:16px;">
+              <input type="text" id="autoMarca" placeholder="Marca (ej. Nissan, VW...)" style="width:100%; padding:14px; border:1px solid #ccc; border-radius:6px; font-size:1rem;" required>
+            </div>
+            <div style="margin-bottom:16px;">
+              <input type="text" id="autoModelo" placeholder="Modelo (ej. Sentra, Jetta...)" style="width:100%; padding:14px; border:1px solid #ccc; border-radius:6px; font-size:1rem;" required>
+            </div>
+            <div style="margin-bottom:24px;">
+              <input type="number" id="autoAno" placeholder="A&ntilde;o (ej. 2018)" min="1990" max="2026" style="width:100%; padding:14px; border:1px solid #ccc; border-radius:6px; font-size:1rem;" required>
+            </div>
+            
+            <button type="button" onclick="nextStep(1, 2)" style="width:100%; padding:16px; background:#061226; color:white; border:none; border-radius:6px; font-size:1rem; font-weight:700; cursor:pointer;" onmouseover="this.style.background='#D4A373'" onmouseout="this.style.background='#061226'">Siguiente Paso</button>
+          </div>
+
+          <!-- STEP 2 -->
+          <div id="step-2" class="form-step" style="display:none;">
+            <h3 style="font-size:1.4rem; font-weight:800; color:#111; margin-bottom:10px;">Paso 2 de 3</h3>
+            <p style="color:#666; font-size:0.95rem; margin-bottom:24px;">Cu&eacute;ntanos m&aacute;s de tu auto</p>
+            
+            <div style="margin-bottom:16px;">
+              <select id="autoVersion" style="width:100%; padding:14px; border:1px solid #ccc; border-radius:6px; font-size:1rem; background:white; color:#333;" required>
+                <option value="" disabled selected>VERSI&Oacute;N</option>
+                <option value="Basico">B&aacute;sico</option>
+                <option value="Intermedio">Intermedio / Equipado</option>
+                <option value="Lujo">Lujo / Tope de gama</option>
+                <option value="No estoy seguro">No estoy seguro</option>
+              </select>
+            </div>
+            <div style="margin-bottom:16px;">
+              <input type="number" id="autoKM" placeholder="KILOMETRAJE" style="width:100%; padding:14px; border:1px solid #ccc; border-radius:6px; font-size:1rem;" required>
+            </div>
+            <div style="margin-bottom:16px;">
+              <!-- Input type file real para fotos -->
+              <label style="display:block; font-size:0.9rem; font-weight:600; margin-bottom:8px; color:#333;">Compartir Fotos</label>
+              <input type="file" id="autoFotos" multiple accept="image/*" style="width:100%; padding:12px; border:1px dashed #D4A373; border-radius:6px; background:#fffbf7; cursor:pointer;" required>
+            </div>
+            
+            <div style="background:#f1f5f9; padding:12px; border-radius:6px; display:flex; gap:10px; align-items:center; margin-bottom:24px;">
+              <span style="font-size:1.2rem;">💡</span>
+              <p style="margin:0; font-size:0.9rem; color:#475569; font-weight:500;">Con estos datos mejoramos tu oferta</p>
+            </div>
+
+            <div style="display:flex; gap:10px;">
+              <button type="button" onclick="nextStep(2, 1)" style="padding:16px; background:#ddd; color:#333; border:none; border-radius:6px; font-weight:600; cursor:pointer;">Atr&aacute;s</button>
+              <button type="button" onclick="nextStep(2, 3)" style="flex:1; padding:16px; background:#061226; color:white; border:none; border-radius:6px; font-size:1rem; font-weight:700; cursor:pointer;" onmouseover="this.style.background='#D4A373'" onmouseout="this.style.background='#061226'">Siguiente Paso</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div id="step-3" class="form-step" style="display:none;">
+            <h3 style="font-size:1.4rem; font-weight:800; color:#111; margin-bottom:10px;">Paso 3 de 3</h3>
+            <p style="color:#666; font-size:0.95rem; margin-bottom:24px;">Recibe tu oferta personalizada</p>
+            
+            <div style="margin-bottom:10px;">
+              <input type="text" id="userNombre" placeholder="NOMBRE" style="width:100%; padding:14px; border:1px solid #ccc; border-radius:6px;" required>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+              <input type="tel" id="userTelefono" placeholder="TEL&Eacute;FONO (10 d&iacute;gitos)" pattern="[0-9]{10}" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 10)" title="Debe contener exactamente 10 d&iacute;gitos." style="flex:1; min-width:140px; padding:14px; border:1px solid #ccc; border-radius:6px;" required>
+              <input type="email" id="userEmail" placeholder="EMAIL" style="flex:1; min-width:140px; padding:14px; border:1px solid #ccc; border-radius:6px;" required>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <p style="font-weight:600; margin-bottom:8px; font-size:0.9rem;">&iquest;C&oacute;mo quieres tu siguiente auto?</p>
+              <label style="display:inline-block; margin-right:15px; cursor:pointer;"><input type="radio" name="planAuto" value="Crédito" required> Cr&eacute;dito</label>
+              <label style="display:inline-block; margin-right:15px; cursor:pointer;"><input type="radio" name="planAuto" value="Contado"> Contado</label>
+              <label style="display:inline-block; cursor:pointer;"><input type="radio" name="planAuto" value="Aún no lo sé"> A&uacute;n no lo s&eacute;</label>
+            </div>
+
+            <div style="margin-bottom:24px;">
+              <p style="font-weight:600; margin-bottom:8px; font-size:0.9rem;">&iquest;Cu&aacute;ndo planeas cambiarlo?</p>
+              <label style="display:inline-block; margin-right:15px; cursor:pointer;"><input type="radio" name="tiempoCompra" value="Inmediato" required> Inmediato</label>
+              <label style="display:inline-block; margin-right:15px; cursor:pointer;"><input type="radio" name="tiempoCompra" value="1–3 meses"> 1&ndash;3 meses</label>
+              <label style="display:inline-block; cursor:pointer;"><input type="radio" name="tiempoCompra" value="Solo explorando"> Solo explorando</label>
+            </div>
+
+            <div style="display:flex; gap:10px;">
+              <button type="button" onclick="nextStep(3, 2)" style="padding:16px; background:#ddd; color:#333; border:none; border-radius:6px; font-weight:600; cursor:pointer;">Atr&aacute;s</button>
+              <button type="submit" style="flex:1; padding:16px; background:#D4A373; color:white; border:none; border-radius:6px; font-size:1.1rem; font-weight:800; cursor:pointer;" onmouseover="this.style.background='#b08253'" onmouseout="this.style.background='#D4A373'">👉 Recibir mi oferta</button>
+            </div>
+          </div>
+        </form>
       </div>
+
+      </div> <!-- / Layout dos columnas -->
 
     </div>
   </section>
@@ -227,7 +307,7 @@
         <!-- Col 1: Logo + redes -->
         <div class="footer-col footer-about">
           <a href="index.html" class="footer-logo-wrap" style="display:inline-block; margin-bottom: 20px;">
-            <img src="Logo.jpeg" alt="JOALEX Asesor&iacute;a Integral" class="footer-logo-img"
+            <img src="Logo.jpg" alt="JOALEX Asesor&iacute;a Integral" class="footer-logo-img"
               style="height: 60px; width: auto; object-fit: contain; border-radius: 4px; filter: sepia(1) hue-rotate(-15deg) saturate(1.2) brightness(0.85) drop-shadow(0 0 6px rgba(188,139,93,0.4));">
           </a>
           <div class="footer-social">
@@ -257,7 +337,7 @@
           <ul class="footer-links">
             <li><a href="index.html"><span>&#8250;</span> Inicio</a></li>
             <li><a href="mision-vision.html"><span>&#8250;</span> Nosotros</a></li>
-            <li><a href="nuevo.html"><span>&#8250;</span> Auto Nuevo</a></li>
+            <li><a href="index.html#nuevo"><span>&#8250;</span> Auto Nuevo</a></li>
             <li><a href="seminuevo.html"><span>&#8250;</span> Auto Seminuevo</a></li>
             <li><a href="deja-tu-auto.html"><span>&#8250;</span> Deja tu Auto</a></li>
             <li><a href="servicios.html"><span>&#8250;</span> Servicios</a></li>
@@ -396,6 +476,156 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Lógica Multi-Step Form ──
+    function nextStep(current, next) {
+      if(next > current) {
+        // Validar inputs del step actual antes de avanzar
+        const currentStepEl = document.getElementById('step-' + current);
+        const inputs = currentStepEl.querySelectorAll('input, select');
+        let isValid = true;
+        for (let i = 0; i < inputs.length; i++) {
+          if (!inputs[i].checkValidity()) {
+            inputs[i].reportValidity();
+            isValid = false;
+            break;
+          }
+        }
+        if (!isValid) return;
+      }
+      
+      document.getElementById('step-' + current).style.display = 'none';
+      document.getElementById('step-' + next).style.display = 'block';
+    }
+
+    async function submitForm(event) {
+      event.preventDefault();
+      
+      const submitBtn = event.target.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '⏳ Preparando imágenes...';
+      submitBtn.disabled = true;
+
+      try {
+        // Datos Step 1
+        const marca = document.getElementById('autoMarca').value;
+        const modelo = document.getElementById('autoModelo').value;
+        const ano = document.getElementById('autoAno').value;
+        
+        // Datos Step 2
+        const version = document.getElementById('autoVersion').value;
+        const km = document.getElementById('autoKM').value;
+        const fotosInput = document.getElementById('autoFotos');
+        
+        // Datos Step 3
+        const nombre = document.getElementById('userNombre').value;
+        const telefono = document.getElementById('userTelefono').value;
+        const email = document.getElementById('userEmail').value;
+        const planEl = document.querySelector('input[name="planAuto"]:checked');
+        const tiempoEl = document.querySelector('input[name="tiempoCompra"]:checked');
+        
+        const plan = planEl ? planEl.value : 'No especificado';
+        const tiempo = tiempoEl ? tiempoEl.value : 'No especificado';
+
+        // ============================================
+        //  TU CLAVE DE IMGBB VA AQUÍ:
+        // ============================================
+        const IMGBB_API_KEY = '6691fb33788a40f56695b86f74163608'; 
+        // ============================================
+
+        if (IMGBB_API_KEY === 'COLOCA_TU_API_KEY_AQUI') {
+          alert("AÚN FALTA TU API KEY. Por favor reemplaza 'COLOCA_TU_API_KEY_AQUI' en el código con tu clave real de ImgBB.");
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          return;
+        }
+
+        let fotosUrls = [];
+
+        // Función para convertir a Base64 y evitar problemas de CORS local (file:///)
+        const getBase64 = (file) => {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => {
+                   let encoded = reader.result.toString().replace(/^data:(.*,)?/, '');
+                   resolve(encoded);
+                };
+                reader.onerror = error => reject(error);
+            });
+        };
+
+        // Subir las fotos a ImgBB si existen
+        if (fotosInput.files && fotosInput.files.length > 0) {
+            for (let i = 0; i < fotosInput.files.length; i++) {
+                submitBtn.innerHTML = `⏳ Subiendo foto ${i + 1} de ${fotosInput.files.length}...`;
+                
+                const file = fotosInput.files[i];
+                const base64Data = await getBase64(file);
+                
+                const urlParams = new URLSearchParams();
+                urlParams.append('image', base64Data);
+                
+                const imgbbResponse = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
+                    method: 'POST',
+                    body: urlParams
+                });
+                
+                if (!imgbbResponse.ok) {
+                    throw new Error(`HTTP Error: ${imgbbResponse.status}`);
+                }
+
+                const imgbbResult = await imgbbResponse.json();
+                if (imgbbResult.success) {
+                    fotosUrls.push({ url: imgbbResult.data.url, preview: imgbbResult.data.thumb.url });
+                } else {
+                    console.error('Error al subir imagen:', imgbbResult);
+                    throw new Error('API ImgBB declinó la imagen.');
+                }
+            }
+        }
+        
+        submitBtn.innerHTML = '📲 Abriendo WhatsApp...';
+
+        // Armando mensaje para WhatsApp
+        let msg = `Hola Josue, quiero valuar mi auto actual para dejarlo a cuenta:%0A%0A` +
+          `*1. Mi Auto:*%0A` +
+          `- Marca: ${marca}%0A` +
+          `- Modelo: ${modelo}%0A` +
+          `- Año: ${ano}%0A` +
+          `- Versión: ${version}%0A` +
+          `- Kilometraje: ${km} km%0A%0A`;
+          
+        if (fotosUrls.length > 0) {
+          msg += `📸 *Fotos de mi auto:*%0A`;
+          fotosUrls.forEach((foto, index) => {
+             // Enviamos la URL directa para que el usuario pueda hacer click
+             msg += `Foto ${index + 1}: ${foto.url}%0A`;
+          });
+          msg += `%0A`;
+        }
+
+        msg += `*2. Mis Datos:*%0A` +
+          `- Nombre: ${nombre}%0A` +
+          `- Teléfono: ${telefono}%0A` +
+          `- Correo: ${email}%0A%0A` +
+          `*3. Mi Próximo Auto:*%0A` +
+          `- Compra de contado o crédito: ${plan}%0A` +
+          `- Tiempo planeado: ${tiempo}`;
+        
+        const whatsappUrl = `https://wa.me/5215610901116?text=${msg}`;
+        window.open(whatsappUrl, '_blank');
+
+      } catch (error) {
+        let msg = "Error general.";
+        if (error.message) msg = error.message;
+        alert(`Ocurrió un error. El navegador bloqueó el envío (probablemente por abrir el archivo localmente como file:// o la imagen es muy grande). Intenta con imágenes menos pesadas. Detalle: ` + msg);
+        console.error(error);
+      } finally {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }
+    }
   </script>
 </body>
 

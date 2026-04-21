@@ -1,4 +1,4 @@
-/* =============================================
+﻿/* =============================================
    JOALEX - Asesoría Integral | style.css
    ============================================= */
 
@@ -873,9 +873,226 @@ section {
   opacity: 1;
 }
 
+/* ===================== MARCA CARD DARK (legacy) ===================== */
+.marca-card-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 16px 22px;
+  background: rgba(16, 28, 48, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(188, 139, 93, 0.2);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: white;
+  transition: all 0.28s ease;
+  cursor: pointer;
+}
+.marca-card-dark:hover { border-color: var(--gold); box-shadow: 0 8px 32px rgba(145, 104, 64, 0.25); transform: translateY(-5px); background: rgba(22, 36, 62, 0.95); }
+.marca-logo-dark { width: 72px; height: 72px; border-radius: 16px; background: rgba(188,139,93,0.1); border: 1px solid rgba(188,139,93,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.28s ease; }
+.marca-card-dark:hover .marca-logo-dark { background: rgba(188,139,93,0.18); border-color: rgba(188,139,93,0.45); }
+.marca-name-dark { font-size: 0.88rem; font-weight: 700; color: rgba(255,255,255,0.9); text-align: center; }
+.marca-url-dark { font-size: 0.7rem; color: var(--gold); font-weight: 500; text-align: center; opacity: 0; transition: opacity 0.2s; }
+.marca-card-dark:hover .marca-url-dark { opacity: 1; }
+
+/* ===================== NUEVA SECCIÓN MARCAS (referencia con fondo cálido) ===================== */
+.marcas-nuevo-section {
+  position: relative;
+  padding: clamp(72px, 9vw, 110px) 0;
+  background: var(--dark);
+  overflow: hidden;
+}
+
+.marcas-nuevo-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(145,104,64,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 0% 100%, rgba(60,30,10,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(30,50,80,0.4) 0%, transparent 60%),
+    linear-gradient(180deg, #0e1a2e 0%, #121c2f 50%, #0c1520 100%);
+  z-index: 1;
+}
+
+.marcas-nuevo-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: white;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.marcas-gold-word {
+  background: linear-gradient(90deg, #BC8B5D 0%, #D4A373 50%, #BC8B5D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+}
+
+.marcas-nuevo-sub {
+  font-size: clamp(0.92rem, 1.4vw, 1.06rem);
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Grid */
+.marcas-nuevo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+/* Tarjeta individual */
+.mnc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 12px 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  text-decoration: none;
+  color: #1a202c;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.mnc:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.3), 0 0 0 2px var(--gold);
+  background: #fff;
+}
+
+.mnc-logo {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mnc-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1a202c;
+  text-align: center;
+}
+
+.mnc-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #916840 0%, #BC8B5D 50%, #D4A373 100%);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.mnc:hover .mnc-btn {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* CTA block */
+.marcas-nuevo-cta {
+  background: rgba(10, 18, 32, 0.7);
+  border: 1px solid rgba(188, 139, 93, 0.22);
+  border-radius: 20px;
+  padding: 44px 40px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.marcas-nuevo-cta-divider {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.marcas-nuevo-cta h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.marcas-nuevo-cta p {
+  font-size: 0.95rem;
+  color: rgba(241, 245, 249, 0.65);
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+
+.marcas-nuevo-cta p strong {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.btn-mnc-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #916840 0%, #BC8B5D 50%, #D4A373 100%);
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 24px rgba(145, 104, 64, 0.35);
+}
+
+.btn-mnc-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 36px rgba(145, 104, 64, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .marcas-nuevo-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+}
+@media (max-width: 560px) {
+  .marcas-nuevo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .marcas-nuevo-cta { padding: 32px 20px; }
+}
+
+
+/* ===================== ALIADOS FINANCIEROS (index) ===================== */
+.aliados-wrap { margin-top: 64px; padding-top: 44px; border-top: 1px solid rgba(188,139,93,0.18); margin-bottom: 60px; text-align: center; }
+.aliados-label { font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 28px; font-weight: 700; }
+.aliados-grupo { margin-bottom: 12px; }
+.aliados-grupo-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 16px; border-radius: 50px; margin-bottom: 18px; }
+.aliados-tag-alt { background: rgba(0,200,120,0.12); color: #4ade80; border: 1px solid rgba(0,200,120,0.3); }
+.aliados-tag-trad { background: rgba(188,139,93,0.1); color: var(--gold-light); border: 1px solid rgba(188,139,93,0.3); }
+.aliados-sep { margin: 28px 0 20px; }
+.aliados-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px; }
+.aliado-logo-card { display: flex; flex-direction: column; align-items: center; gap: 6px; transition: transform 0.22s ease, filter 0.22s ease; opacity: 0.82; }
+.aliado-logo-card:hover { transform: translateY(-3px); opacity: 1; filter: drop-shadow(0 4px 12px rgba(188,139,93,0.35)); }
+.aliado-name { font-size: 0.68rem; font-weight: 600; color: rgba(255,255,255,0.45); letter-spacing: 0.04em; }
+@media (max-width: 640px) { .aliados-row { gap: 10px; } .aliado-logo-card svg { width: auto !important; height: 28px !important; } }
+
 /* ===================== SERVICIOS ===================== */
 .servicios {
   background: var(--dark);
+
 }
 
 .servicios-grid {
@@ -5281,4 +5498,187 @@ body {
 .fc-dot.active {
   background: var(--gold-light);
   transform: scale(1.25);
+}
+/* ===================== PRUEBA DE MANEJO ===================== */
+@media (max-width: 768px) {
+  #prueba .container > div { grid-template-columns: 1fr !important; gap: 40px !important; }
+  #prueba [style*='grid-template-columns:repeat(3'] { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 480px) {
+  #prueba [style*='grid-template-columns:repeat(3'] { grid-template-columns: 1fr !important; }
+}
+
+/* =====================================================================
+   TEMA JOALEX — AJUSTE QUIRÚRGICO
+   Reglas SOLO para secciones con fondo claro.
+   Secciones oscuras (hero, vision, mision, cards dark) heredan blanco.
+   ===================================================================== */
+
+/* ── Variables ── */
+:root {
+  --ds-bg:      #EDF2FA;
+  --ds-white:   #FFFFFF;
+  --ds-navy:    #0F2D5E;
+  --ds-blue:    #1E5FA8;
+  --ds-sky:     #4A90D9;
+  --ds-text:    #1F2937;
+  --ds-muted:   #4B5563;
+  --ds-subtle:  #9CA3AF;
+  --ds-border:  rgba(15,45,94,0.12);
+  --ds-shadow:  0 4px 20px rgba(15,45,94,0.08);
+  --ds-shadowH: 0 12px 40px rgba(15,45,94,0.15);
+}
+
+/* 1. Body → azul muy claro. NO tocar color de texto global  */
+body {
+  background-color: var(--ds-bg) !important;
+  background-image: none !important;
+}
+
+/* 2. Header → oscuro original (sin override, ya funciona) */
+
+/* 3. Fondos de secciones intermedias claras */
+.servicios       { background: var(--ds-white) !important; background-image: none !important; }
+.visual-section  { background: var(--ds-bg)    !important; background-image: none !important; }
+.experiencia     { background: var(--ds-white) !important; background-image: none !important; }
+.marcas-nuevo-section { background: var(--ds-bg) !important; background-image: none !important; }
+.mvv-page-section     { background: var(--ds-bg) !important; background-image: none !important; }
+.marcas-nuevo-overlay { display: none !important; }
+
+/* 4. Textos en secciones claras: usar clases específicas, no tag global */
+.servicios .section-title,
+.visual-section .section-title,
+.experiencia .section-title,
+.marcas-nuevo-section .section-title {
+  color: var(--ds-navy) !important;
+}
+.servicios .section-subtitle,
+.visual-section .section-subtitle,
+.experiencia .section-subtitle,
+.marcas-nuevo-section .section-subtitle {
+  color: var(--ds-muted) !important;
+}
+
+/* 5. Cards de servicios → blancas con borde izq azul */
+.servicio-card {
+  background: var(--ds-white) !important;
+  border: 1px solid var(--ds-border) !important;
+  border-left: 4px solid var(--ds-blue) !important;
+  border-top: none !important;
+  box-shadow: var(--ds-shadow) !important;
+}
+.servicio-card:hover {
+  border-left-color: var(--gold) !important;
+  box-shadow: var(--ds-shadowH) !important;
+}
+/* Texto de cards → oscuro (solo para cards con fondo claro) */
+.servicio-card .flip-front-title { color: var(--ds-navy) !important; }
+.servicio-card .flip-hint         { color: var(--ds-subtle) !important; }
+.servicio-card h3                 { color: var(--ds-navy) !important; }
+.servicio-card p                  { color: var(--ds-muted) !important; }
+.servicio-card:hover h3           { color: var(--ds-blue) !important; }
+.servicio-card:hover p            { color: var(--ds-text) !important; }
+.servicio-icon                    { background: rgba(30,95,168,0.08) !important; }
+.servicio-icon svg                { stroke: var(--ds-blue) !important; }
+.servicio-tags span {
+  background: rgba(30,95,168,0.07) !important;
+  color: var(--ds-blue) !important;
+  border-color: rgba(30,95,168,0.2) !important;
+}
+
+/* 6. Cards de marcas → blancas */
+.marca-card {
+  background: var(--ds-white) !important;
+  border: 1px solid var(--ds-border) !important;
+}
+.marca-card:hover { border-color: var(--gold) !important; }
+.marca-name, .mnc-name { color: var(--ds-navy) !important; }
+
+/* 7. Minimal cards / resumen */
+.minimal-card {
+  background: var(--ds-white) !important;
+  border: 1px solid var(--ds-border) !important;
+  box-shadow: var(--ds-shadow) !important;
+}
+.minimal-card h3 { color: var(--ds-blue) !important; }
+.minimal-card p  { color: var(--ds-muted) !important; }
+.habilidades li  { color: var(--ds-text) !important; }
+.commitment-box  {
+  background: rgba(30,95,168,0.06) !important;
+  border-left-color: var(--ds-blue) !important;
+  color: var(--ds-navy) !important;
+}
+
+/* 8. CTA bloque marcas → fondo oscuro con texto blanco */
+.marcas-nuevo-cta {
+  background: var(--ds-navy) !important;
+  border: none !important;
+}
+.marcas-nuevo-cta h3              { color: #FFFFFF !important; }
+.marcas-nuevo-cta p               { color: rgba(255,255,255,0.82) !important; }
+.marcas-nuevo-cta p strong        { color: #FFFFFF !important; }
+.marcas-nuevo-title               { color: var(--ds-navy) !important; }
+.marcas-nuevo-sub                 { color: var(--ds-muted) !important; }
+
+/* 9. MVV page section headers (NOT hero/dark sections) */
+.mvv-page-section .section-title  { color: var(--ds-navy) !important; }
+.mvv-page-section .section-subtitle { color: var(--ds-muted) !important; }
+.step-box h3                       { color: var(--ds-navy) !important; }
+.step-box p                        { color: var(--ds-muted) !important; }
+
+/* 10. Formularios → bordes y labels visibles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  border: 1.5px solid rgba(15,45,94,0.25) !important;
+  border-radius: 8px !important;
+  font-family: 'Outfit', sans-serif !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none !important;
+  border-color: var(--ds-blue) !important;
+  box-shadow: 0 0 0 3px rgba(30,95,168,0.12) !important;
+}
+input[type="radio"], input[type="checkbox"] {
+  accent-color: var(--ds-blue) !important;
+  width: auto !important;
+  padding: 0 !important;
+}
+
+/* 11. Dropdowns nav */
+.nav-dropdown-menu    { background: var(--ds-white) !important; border: 1px solid var(--ds-border) !important; }
+.nav-dropdown-item    { color: var(--ds-navy) !important; }
+.nav-dropdown-item:hover { background: var(--ds-bg) !important; color: var(--ds-blue) !important; }
+
+/* 12. Aliados */
+.aliado-name { color: var(--ds-muted) !important; }
+.aliados-label { color: var(--ds-blue) !important; }
+
+/* 13. SVG alineación en flex */
+[style*="display:flex"] > svg { display: block !important; flex-shrink: 0 !important; }
+
+/* 14. Banners CTA en Seminuevos y Galeria (Fondo oscuro para destacar textos blancos) */
+.beneficio-banner,
+.seminuevos .container > div[style*="background:rgba(255,255"] {
+  background: var(--ds-navy) !important;
+  border: none !important;
+  box-shadow: var(--ds-shadow) !important;
+}
+.beneficio-text h4 {
+  color: var(--gold) !important;
+}
+
+/* Fix para Mision en movil (Texto primero) */
+@media (max-width: 768px) {
+  .mision-img-half {
+    order: 2;
+  }
+  .mision-text-half {
+    order: 1;
+  }
 }
