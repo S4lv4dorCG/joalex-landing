@@ -4364,6 +4364,16 @@ body {
   font-size: 0.88rem !important;
 }
 
+/* ===================== PDF PREVIEW MOBILE FIX ===================== */
+@media (max-width: 768px) {
+  .pdf-preview-desktop {
+    display: none !important;
+  }
+  .pdf-preview-mobile {
+    display: flex !important;
+  }
+}
+
 .seminuevos-note {
   display: flex;
   align-items: center;
@@ -5700,6 +5710,10 @@ input[type="radio"], input[type="checkbox"] {
 }
 .beneficio-text h4 {
   color: var(--gold) !important;
+}
+.beneficio-text p {
+  color: rgba(241, 245, 249, 0.85) !important;
+  line-height: 1.7;
 }
 
 /* Fix para Mision en movil (Texto primero) */
