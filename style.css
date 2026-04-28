@@ -533,6 +533,20 @@ section {
   z-index: 0;
 }
 
+.hero-bg-cars {
+  background-image: url('Daniel_Multimarcas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .hero-bg-cars {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
