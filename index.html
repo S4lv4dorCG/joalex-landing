@@ -31,6 +31,8 @@
 </head>
 
 <body>
+  <!-- Fondo Fijo Global para Parallax -->
+  <div class="global-fixed-bg" style="position: fixed; inset: 0; background-image: url('Daniel_Multimarcas.jpg'); background-size: cover; background-position: center; z-index: -100; pointer-events: none;"></div>
 
   <!-- ===================== HEADER ===================== -->
   <header class="header">
@@ -138,10 +140,8 @@
   </header>
 
   <!-- ===================== HERO ===================== -->
-  <section class="hero">
-    <div class="hero-bg hero-bg-cars">
-      <div class="hero-overlay"></div>
-    </div>
+  <section class="hero" style="background: transparent !important;">
+    <div class="hero-overlay"></div>
     <div class="container hero-inner">
       <div class="hero-content hero-content-optimized">
         <h1 class="hero-title" style="margin-bottom: 24px;">
@@ -166,13 +166,11 @@
   </section>
 
   <!-- ===================== FEATURE CARDS ===================== -->
-  <section class="fc-section" id="ventajas" aria-label="Por qu&eacute; elegir Joalex" style="position: relative; overflow: hidden;">
-    <div class="hero-bg hero-bg-cars" style="position: absolute; inset: 0; z-index: 0;">
-      <div class="hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(12, 26, 54, 0.60) 0%, rgba(12, 26, 54, 0.35) 100%); z-index: 1;"></div>
-    </div>
+  <section class="fc-section" id="ventajas" aria-label="Por qu&eacute; elegir Joalex" style="position: relative; overflow: hidden; background: transparent !important;">
+    <div class="hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(12, 26, 54, 0.60) 0%, rgba(12, 26, 54, 0.35) 100%); z-index: 1;"></div>
     <div class="fc-track-outer" style="position: relative; z-index: 2;">
-      <button class="carousel-btn prev" onclick="moveFCCarousel(-1)" aria-label="Anterior">&#10094;</button>
-      <button class="carousel-btn next" onclick="moveFCCarousel(1)" aria-label="Siguiente">&#10095;</button>
+      <button class="fc-nav fc-nav-prev" onclick="moveFCCarousel(-1)" aria-label="Anterior">&#10094;</button>
+      <button class="fc-nav fc-nav-next" onclick="moveFCCarousel(1)" aria-label="Siguiente">&#10095;</button>
       <div class="fc-track" id="fcTrack">
         <!-- Grupo 1 -->
         <div class="fc-slide-group">
@@ -1253,14 +1251,17 @@
     function moveFCCarousel(direction) {
       const track = document.getElementById('fcTrack');
       if (!track) return;
-      track.scrollBy({ left: direction * track.offsetWidth, behavior: 'smooth' });
-      // Actualizar dots
-      setTimeout(() => {
-        const groups = Array.from(track.querySelectorAll('.fc-slide-group'));
-        const dots = Array.from(document.querySelectorAll('#fcDots .fc-dot'));
-        const i = Math.round(track.scrollLeft / track.offsetWidth);
-        dots.forEach((d, j) => d.classList.toggle('active', j === i));
-      }, 400);
+      const isMobile = window.innerWidth <= 768;
+      const scrollAmount = isMobile ? track.querySelector('.fc-card').offsetWidth : track.offsetWidth;
+      track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+      // Actualizar dots (solo en desktop, en móvil son más tarjetas)
+      if (!isMobile) {
+        setTimeout(() => {
+          const dots = Array.from(document.querySelectorAll('#fcDots .fc-dot'));
+          const i = Math.round(track.scrollLeft / track.offsetWidth);
+          dots.forEach((d, j) => d.classList.toggle('active', j === i));
+        }, 400);
+      }
     }
 
   </script>
